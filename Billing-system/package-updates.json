@@ -1,0 +1,36 @@
+{
+  "dependencies_to_add": {
+    "stripe": "^14.5.0",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.7",
+    "dotenv": "^16.3.1"
+  },
+  "scripts_to_add": {
+    "migrate": "node scripts/migrate.js",
+    "migrate:down": "node scripts/migrate.js down",
+    "seed": "node scripts/seed.js",
+    "stripe:webhook": "stripe listen --forward-to localhost:3001/api/billing/webhook",
+    "dev:billing": "concurrently \"npm run dev\" \"npm run stripe:webhook\"",
+    "test:billing": "jest --testPathPattern=billing"
+  },
+  "devDependencies_to_add": {
+    "concurrently": "^8.2.2",
+    "@stripe/stripe-js": "^2.2.0"
+  },
+  "full_install_command": "npm install stripe node-cron nodemailer dotenv && npm install -D concurrently @stripe/stripe-js",
+  "frontend_dependencies": {
+    "note": "For the frontend (React), you only need to include the Stripe.js script tag",
+    "script_tag": "<script src=\"https://js.stripe.com/v3/\"></script>",
+    "add_to": "public/index.html in the <head> section"
+  },
+  "environment_variables_required": [
+    "STRIPE_SECRET_KEY",
+    "STRIPE_PUBLISHABLE_KEY", 
+    "STRIPE_WEBHOOK_SECRET",
+    "SMTP_HOST",
+    "SMTP_PORT",
+    "SMTP_USER",
+    "SMTP_PASS",
+    "ENABLE_BILLING=true"
+  ]
+}

@@ -1,0 +1,353 @@
+// StripePaymentForm component - Add to your React app
+// First, add this script tag to your index.html:
+// <script src="https://js.stripe.com/v3/"></script>
+
+const StripePaymentForm = ({ onSuccess, onError, clientSecret }) => {
+    const [stripe, setStripe] = useState(null);
+    const [cardElement, setCardElement] = useState(null);
+    const [processing, setProcessing] = useState(false);
+    const [error, setError] = useState(null);
+    const [cardComplete, setCardComplete] = useState(false);
+    const cardRef = useRef(null);
+
+    useEffect(() => {
+        // Initialize Stripe
+        if (window.Stripe) {
+            const stripeInstance = window.Stripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
+            setStripe(stripeInstance);
+            
+            // Create card element
+            const elements = stripeInstance.elements({
+                fonts: [
+                    {
+                        cssSrc: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap',
+                    },
+                ],
+            });
+            
+            const card = elements.create('card', {
+                style: {
+                    base: {
+                        color: '#e2e8f0',
+                        fontFamily: '"Inter", sans-serif',
+                        fontSmoothing: 'antialiased',
+                        fontSize: '16px',
+                        '::placeholder': {
+                            color: '#64748b',
+                        },
+                    },
+                    invalid: {
+                        color: '#ef4444',
+                        iconColor: '#ef4444',
+                    },
+                },
+                classes: {
+                    base: 'stripe-card-element',
+                    complete: 'stripe-card-complete',
+                    invalid: 'stripe-card-invalid',
+                },
+            });
+            
+            // Mount card element
+            if (cardRef.current) {
+                card.mount(cardRef.current);
+                setCardElement(card);
+                
+                // Listen for changes
+                card.on('change', (event) => {
+                    setError(event.error ? event.error.message : null);
+                    setCardComplete(event.complete);
+                });
+            }
+            
+            return () => {
+                card.destroy();
+            };
+        }
+    }, []);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        
+        if (!stripe || !cardElement || !cardComplete) {
+            setError('Please complete your card details');
+            return;
+        }
+        
+        setProcessing(true);
+        setError(null);
+        
+        try {
+            if (clientSecret) {
+                // Confirm payment for immediate charge
+                const { error: confirmError, paymentIntent } = await stripe.confirmCardPayment(
+                    clientSecret,
+                    {
+                        payment_method: {
+                            card: cardElement,
+                        },
+                    }
+                );
+                
+                if (confirmError) {
+                    throw confirmError;
+                }
+                
+                onSuccess({ paymentIntent });
+            } else {
+                // Create payment method for subscription
+                const { error: methodError, paymentMethod } = await stripe.createPaymentMethod({
+                    type: 'card',
+                    card: cardElement,
+                });
+                
+                if (methodError) {
+                    throw methodError;
+                }
+                
+                onSuccess({ paymentMethod });
+            }
+        } catch (err) {
+            setError(err.message);
+            if (onError) onError(err);
+        } finally {
+            setProcessing(false);
+        }
+    };
+
+    return (
+        <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="form-group">
+                <label className="form-label">Card Information</label>
+                <div 
+                    ref={cardRef}
+                    className="clockwork-input p-3"
+                    style={{
+                        background: 'var(--clockwork-darker)',
+                        border: '2px solid rgba(255, 255, 255, 0.1)',
+                        borderRadius: '12px',
+                        minHeight: '50px',
+                        display: 'flex',
+                        alignItems: 'center',
+                    }}
+                />
+                {error && (
+                    <p className="text-red-400 text-sm mt-2">{error}</p>
+                )}
+            </div>
+
+            <div className="bg-slate-800/50 rounded-lg p-3 text-xs text-gray-400">
+                <p className="flex items-center gap-2 mb-1">
+                    <i className="fas fa-lock text-green-400"></i>
+                    Your payment info is secure and encrypted
+                </p>
+                <p>
+                    Test card: 4242 4242 4242 4242 | Any future date | Any 3 digits
+                </p>
+            </div>
+
+            <button
+                type="submit"
+                disabled={processing || !cardComplete}
+                className={`clockwork-button w-full ${
+                    processing || !cardComplete ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
+            >
+                {processing ? (
+                    <>
+                        <div className="loading-spinner mr-2"></div>
+                        Processing...
+                    </>
+                ) : (
+                    'Save Payment Method'
+                )}
+            </button>
+        </form>
+    );
+};
+
+// Enhanced Billing Modal with Stripe integration
+const BillingUpgradeModal = ({ tier, currentTier, onClose, onSuccess }) => {
+    const [step, setStep] = useState('review'); // 'review' | 'payment' | 'success'
+    const [clientSecret, setClientSecret] = useState(null);
+    const [loading, setLoading] = useState(false);
+    
+    useEffect(() => {
+        // Create setup intent when modal opens
+        fetchSetupIntent();
+    }, []);
+    
+    const fetchSetupIntent = async () => {
+        try {
+            const response = await fetch('/api/billing/setup-intent', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${sessionStorage.getItem('authToken')}`
+                }
+            });
+            const data = await response.json();
+            setClientSecret(data.clientSecret);
+        } catch (error) {
+            console.error('Error creating setup intent:', error);
+        }
+    };
+    
+    const handlePaymentSuccess = async ({ paymentMethod }) => {
+        setLoading(true);
+        try {
+            // Subscribe to the selected tier
+            const response = await fetch('/api/billing/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${sessionStorage.getItem('authToken')}`
+                },
+                body: JSON.stringify({
+                    tierId: tier.id,
+                    paymentMethodId: paymentMethod.id
+                })
+            });
+            
+            if (response.ok) {
+                setStep('success');
+                setTimeout(() => {
+                    onSuccess();
+                    onClose();
+                }, 2000);
+            } else {
+                throw new Error('Subscription failed');
+            }
+        } catch (error) {
+            console.error('Subscription error:', error);
+            setError('Failed to complete subscription. Please try again.');
+        } finally {
+            setLoading(false);
+        }
+    };
+    
+    return (
+        <div className="modal-overlay" onClick={onClose}>
+            <div className="modal-content max-w-lg" onClick={(e) => e.stopPropagation()}>
+                {step === 'review' && (
+                    <>
+                        <h3 className="text-xl font-semibold mb-4 text-white">
+                            Upgrade to {tier.name}
+                        </h3>
+                        
+                        <div className="bg-slate-800 rounded-lg p-4 mb-6">
+                            <div className="flex justify-between items-center mb-4">
+                                <div>
+                                    <p className="text-sm text-gray-400">New monthly price</p>
+                                    <p className="text-2xl font-bold text-white">${tier.price}</p>
+                                </div>
+                                {currentTier && (
+                                    <div className="text-right">
+                                        <p className="text-sm text-gray-400">Currently paying</p>
+                                        <p className="text-lg line-through text-gray-500">${currentTier.price}</p>
+                                    </div>
+                                )}
+                            </div>
+                            
+                            <div className="border-t border-gray-700 pt-4">
+                                <p className="text-sm text-gray-400 mb-2">You'll get:</p>
+                                <ul className="space-y-1">
+                                    <li className="text-sm text-gray-300 flex items-center gap-2">
+                                        <span className="text-green-400">✓</span>
+                                        {tier.client_limit === -1 ? 'Unlimited' : `Up to ${tier.client_limit}`} clients
+                                    </li>
+                                    {tier.features?.slice(0, 3).map((feature, index) => (
+                                        <li key={index} className="text-sm text-gray-300 flex items-center gap-2">
+                                            <span className="text-green-400">✓</span>
+                                            {feature}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div className="flex gap-2">
+                            <button
+                                onClick={() => setStep('payment')}
+                                className="clockwork-button flex-1"
+                            >
+                                Continue to Payment
+                            </button>
+                            <button onClick={onClose} className="clockwork-button-secondary">
+                                Cancel
+                            </button>
+                        </div>
+                    </>
+                )}
+                
+                {step === 'payment' && (
+                    <>
+                        <h3 className="text-xl font-semibold mb-4 text-white">
+                            Payment Information
+                        </h3>
+                        
+                        <div className="mb-6">
+                            <div className="bg-slate-800 rounded-lg p-3 mb-4">
+                                <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-400">Subscribing to:</span>
+                                    <span className="font-medium text-white">{tier.name} - ${tier.price}/mo</span>
+                                </div>
+                            </div>
+                            
+                            <StripePaymentForm
+                                clientSecret={clientSecret}
+                                onSuccess={handlePaymentSuccess}
+                                onError={(error) => setError(error.message)}
+                            />
+                        </div>
+                        
+                        <button
+                            onClick={() => setStep('review')}
+                            className="text-sm text-gray-400 hover:text-gray-300"
+                        >
+                            ← Back to review
+                        </button>
+                    </>
+                )}
+                
+                {step === 'success' && (
+                    <div className="text-center py-8">
+                        <div className="text-6xl mb-4">🎉</div>
+                        <h3 className="text-2xl font-bold text-white mb-2">
+                            Welcome to {tier.name}!
+                        </h3>
+                        <p className="text-gray-400">
+                            Your subscription is active. Redirecting...
+                        </p>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+};
+
+// Stripe CSS styles to add to your global styles
+const stripeStyles = `
+/* Stripe Card Element Custom Styles */
+.stripe-card-element {
+    transition: border-color 0.3s ease;
+}
+
+.stripe-card-element.StripeElement--focus {
+    border-color: var(--clockwork-primary) !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.stripe-card-element.StripeElement--invalid {
+    border-color: var(--clockwork-error) !important;
+}
+
+.stripe-card-element.StripeElement--complete {
+    border-color: var(--clockwork-success) !important;
+}
+
+/* Stripe Elements Container */
+.StripeElement {
+    padding: 0 !important;
+}
+`;

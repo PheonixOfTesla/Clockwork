@@ -1,0 +1,252 @@
+CLOCKWORK PLATFORM DEEP ANALYSIS
+Generated: Fri Aug  1 12:51:15 EDT 2025
+==================================
+
+📊 COMPLETE STATISTICS
+-------------------
+Total files:    49120
+Total directories:     7605
+Total size: 659M
+Hidden files:      238
+Symbolic links:       57
+
+📁 FILE TYPE ANALYSIS (ALL TYPES)
+--------------------------------
+.js                   28706 files
+.ts                    9993 files
+.map                   3171 files
+.json                  2590 files
+.md                    1227 files
+.flow                   951 files
+.mjs                    595 files
+.yml                    186 files
+.cjs                    125 files
+.png                     97 files
+.eslintrc                61 files
+.mts                     54 files
+.txt                     53 files
+.tsx                     53 files
+.sample                  42 files
+.cts                     36 files
+.html                    32 files
+.nycrc                   30 files
+.css                     30 files
+.npmignore               29 files
+.coffee                  20 files
+.bnf                     14 files
+.editorconfig            10 files
+.sh                       9 files
+.jshintrc                 7 files
+.gitkeep                  7 files
+.markdown                 6 files
+.xml                      5 files
+.BSD                      5 files
+.pack                     4 files
+.gitattributes            4 files
+.babelrc                  4 files
+.1                        4 files
+.tsbuildinfo              3 files
+.snap                     3 files
+.lock                     3 files
+.jsx                      3 files
+.gitignore                3 files
+.eslintrc 2               3 files
+.env                      3 files
+.DS_Store                 3 files
+.wasm                     2 files
+.svg                      2 files
+.production               2 files
+.nycrc 2                  2 files
+.node                     2 files
+.log                      2 files
+.example                  2 files
+.esprima                  2 files
+.conf                     2 files
+.closure-compiler         2 files
+.backup                   2 files
+.swf                      1 files
+.save                     1 files
+.py                       1 files
+.php                      1 files
+.pegjs                    1 files
+.pdf                      1 files
+.opts                     1 files
+.old                      1 files
+.npmignore 2              1 files
+.nix                      1 files
+.mdown                    1 files
+.jscsrc                   1 files
+.jison                    1 files
+.iml                      1 files
+.gz                       1 files
+.exe                      1 files
+.eslintcache              1 files
+.covignore                1 files
+.bin                      1 files
+.bak                      1 files
+.applescript              1 files
+
+💻 CODE ANALYSIS BY LANGUAGE
+----------------------------
+js               28712 files  4106627 lines
+jsx                  3 files     5102 lines
+ts                9993 files   670393 lines
+tsx                 53 files    19148 lines
+py                   1 files      149 lines
+css                 30 files     5096 lines
+html                32 files    61391 lines
+php                  1 files      155 lines
+
+🚀 PROJECT & FRAMEWORK DETECTION
+--------------------------------
+Node.js projects (package.json):
+  📦 ../clockwork-backend/node_modules/jws
+  📦 ../clockwork-backend/node_modules/helmet
+		"express",
+  📦 ../clockwork-backend/node_modules/triple-beam
+  📦 ../clockwork-backend/node_modules/simple-swizzle/node_modules/is-arrayish
+  📦 ../clockwork-backend/node_modules/simple-swizzle
+  📦 ../clockwork-backend/node_modules/pg-int8
+  📦 ../clockwork-backend/node_modules/destroy
+  📦 ../clockwork-backend/node_modules/@types/triple-beam
+  📦 ../clockwork-backend/node_modules/@types/cors
+  📦 ../clockwork-backend/node_modules/@types/node
+  📦 ../clockwork-backend/node_modules/lodash.includes
+  📦 ../clockwork-backend/node_modules/lodash
+  📦 ../clockwork-backend/node_modules/on-headers
+  📦 ../clockwork-backend/node_modules/jwa
+  📦 ../clockwork-backend/node_modules/toidentifier
+  📦 ../clockwork-backend/node_modules/@redis/time-series
+  📦 ../clockwork-backend/node_modules/@redis/graph
+  📦 ../clockwork-backend/node_modules/@redis/bloom
+  📦 ../clockwork-backend/node_modules/@redis/search
+
+Python projects:
+
+Docker containers:
+
+📏 SPACE USAGE ANALYSIS
+----------------------
+Files over 10MB:
+53M ../Clockwork-frontend/node_modules/.cache/default-development/1.pack
+18M ../Clockwork-frontend/node_modules/.cache/default-development/0.pack
+11M ../Clockwork-frontend/node_modules/typescript/lib/tsserverlibrary.js
+11M ../Clockwork-frontend/node_modules/typescript/lib/tsserver.js
+10M ../Clockwork-frontend/node_modules/typescript/lib/typescriptServices.js
+10M ../Clockwork-frontend/node_modules/typescript/lib/typescript.js
+
+Largest directories:
+608M	../Clockwork-frontend
+603M	../Clockwork-frontend/node_modules
+ 90M	../Clockwork-frontend/node_modules/.cache
+ 75M	../Clockwork-frontend/node_modules/.cache/default-development
+ 64M	../Clockwork-frontend/node_modules/typescript/lib
+ 64M	../Clockwork-frontend/node_modules/typescript
+ 48M	../clockwork-backend
+ 46M	../clockwork-backend/node_modules
+ 41M	../Clockwork-frontend/node_modules/@heroicons/react
+ 41M	../Clockwork-frontend/node_modules/@heroicons
+ 37M	../Clockwork-frontend/node_modules/date-fns
+ 22M	../Clockwork-frontend/node_modules/date-fns/esm
+ 20M	../Clockwork-frontend/node_modules/core-js-pure
+ 20M	../Clockwork-frontend/node_modules/core-js
+ 20M	../Clockwork-frontend/node_modules/@heroicons/react/24
+
+🔍 DUPLICATE FILE DETECTION
+--------------------------
+Files with same size (potential duplicates):
+
+🏗️ CODE QUALITY INDICATORS
+-------------------------
+TODO/FIXME/HACK comments:
+    4733
+
+Console.log statements:
+    3280
+
+Commented out code blocks (///):
+     397
+
+🔧 GIT REPOSITORY ANALYSIS
+-------------------------
+Repository: ../clockwork-backend
+3b2c7b4 Initial ClockWork platform
+bbe54db Initial commit: Core backend structure with auth, server, and services
+Repository: ../Clockwork-frontend
+f5336f0 ClockWork frontend
+15c1dbc Remove large image file
+6bd96f2 Fresh start
+Repository: ..
+c371c79 Complete ClockWork platform - backend + frontend
+
+🔒 SECURITY SCAN
+---------------
+Potential API keys/tokens:
+     146
+
+Environment files:
+../clockwork-backend/.env.backup
+../clockwork-backend/.env.save
+../clockwork-backend/.env
+../clockwork-backend/.env.example
+../.env
+../Clockwork-frontend/.env.production
+../Clockwork-frontend/.env
+../Clockwork-frontend/.env.example
+
+📅 FILE AGE ANALYSIS
+-------------------
+Files modified in last 24 hours:
+       5
+
+Files modified in last week:
+      12
+
+Files not modified in 6 months:
+       0
+
+🎯 SPECIAL FILES & PATTERNS
+---------------------------
+README files:
+../clockwork-backend/.vercel/README.txt
+../clockwork-backend/node_modules/jws/readme.md
+../clockwork-backend/node_modules/helmet/README.md
+../clockwork-backend/node_modules/triple-beam/README.md
+../clockwork-backend/node_modules/simple-swizzle/node_modules/is-arrayish/README.md
+../clockwork-backend/node_modules/simple-swizzle/README.md
+../clockwork-backend/node_modules/pg-int8/README.md
+../clockwork-backend/node_modules/destroy/README.md
+../clockwork-backend/node_modules/@types/triple-beam/README.md
+../clockwork-backend/node_modules/@types/cors/README.md
+
+Configuration files:
+../clockwork-backend/postgres-tuning.conf
+../clockwork-backend/node_modules/es-errors/.github/FUNDING.yml
+../clockwork-backend/node_modules/math-intrinsics/.github/FUNDING.yml
+../clockwork-backend/node_modules/has-tostringtag/.github/FUNDING.yml
+../clockwork-backend/node_modules/pstree.remy/.travis.yml
+../clockwork-backend/node_modules/side-channel-list/.github/FUNDING.yml
+../clockwork-backend/node_modules/balanced-match/.github/FUNDING.yml
+../clockwork-backend/node_modules/call-bind-apply-helpers/.github/FUNDING.yml
+../clockwork-backend/node_modules/express/node_modules/debug/.coveralls.yml
+../clockwork-backend/node_modules/express/node_modules/debug/.travis.yml
+../clockwork-backend/node_modules/proxy-from-env/.travis.yml
+../clockwork-backend/node_modules/kuler/.travis.yml
+../clockwork-backend/node_modules/function-bind/.github/FUNDING.yml
+../clockwork-backend/node_modules/es-define-property/.github/FUNDING.yml
+../clockwork-backend/node_modules/get-intrinsic/.github/FUNDING.yml
+
+Test files:
+      69
+
+🏗️ TECHNOLOGY STACK SUMMARY
+---------------------------
+Checking for frameworks...
+✓ Python detected
+✓ Docker detected
+✓ Java detected
+✓ Go detected
+✓ Rust detected
+✓ React detected
+✓ Vue detected
+

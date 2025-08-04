@@ -1,0 +1,1049 @@
+=== FOLDER ANALYSIS ===
+Analysis Date: Sat Aug  2 10:54:18 EDT 2025
+Current Directory: /Users/moderndavinci/Desktop/clockwork-project
+
+=== SUMMARY ===
+Total files:    49101
+Total directories:     7587
+Total size: 657M
+
+=== FILE TYPES BREAKDOWN ===
+28713 js
+9993 ts
+3171 map
+2591 json
+1227 md
+ 951 flow
+ 595 mjs
+ 186 yml
+ 125 cjs
+  97 png
+  61 eslintrc
+  58 txt
+  54 mts
+  53 tsx
+  36 cts
+  30 nycrc
+  30 css
+  29 npmignore
+  28 sample
+  27 html
+  20 coffee
+  14 bnf
+  13 sh
+  10 editorconfig
+   7 jshintrc
+   7 gitkeep
+   6 markdown
+   5 xml
+   5 BSD
+   4 pack
+   4 io-parser/LICENSE
+   4 gitattributes
+   4 babelrc
+   4 1
+   3 tsbuildinfo
+   3 snap
+   3 lock
+   3 jsx
+   3 js/LICENSE
+   3 eslintrc 2
+   3 DS_Store
+   2 wasm
+   2 svg
+   2 production
+   2 nycrc 2
+   2 node
+   2 log
+   2 io/node_modules/debug/LICENSE
+   2 io/component-emitter/LICENSE
+   2 io/LICENSE
+   2 io-parser/node_modules/debug/LICENSE
+   2 io-client/node_modules/debug/LICENSE
+   2 io-client/LICENSE
+   2 gitignore
+   2 git/refs/remotes/origin/main
+   2 git/refs/heads/main
+   2 git/objects/ff/a48b2ae5ca455ded1fd36ab6fa96a1491ebe5b
+   2 git/objects/f2/1ac42f099f704b957da9bb0b6cc3796b69ac62
+   2 git/objects/f0/4a21332eba2cae5d6897abcf4fc2f58018529b
+   2 git/objects/ee/39a3b7645ab8ad187d1319a52082902c804d46
+   2 git/objects/e9/50891055ee95341334ff9756aaa32f55324453
+   2 git/objects/e6/e5179c617cad9a495f17dd6bb8700f48983744
+   2 git/objects/da/69b91a6f34ac23e4b95f7a21589e5efddf252f
+   2 git/objects/d2/76ec3e5ce0a6b900c499d10f4355ce1493a0bd
+   2 git/objects/ca/5e2ec91b0788a1395d5c44abbf617dff537d2e
+   2 git/objects/c8/b1f7f0f879d23b5df16641e11048901c6a3ada
+   2 git/objects/c7/ddc617902d622bec7d02d050cc58b571fcb285
+   2 git/objects/b6/56efa662cfcadd0c78039a53d4eb25b9630986
+   2 git/objects/b5/d5b0d53c6d738821303ec053f9cb81e9646077
+   2 git/objects/99/b5c05d58f84a910e5b97595d19727f2ef23f86
+   2 git/objects/8c/9de3a3450ea6affae6906ac739e45cd85deaa9
+   2 git/objects/87/1ed6af3380250bb1ec718edb492251d4556d78
+   2 git/objects/85/36996afc5d39cbd3b0fe447bbf6fa0b0ab5a75
+   2 git/objects/7a/730dd62c1154b5f8afeb767b37bf047e90ca1c
+   2 git/objects/77/de46d4c31b87b2cc525bf426779ef0eeb64e02
+   2 git/objects/66/db51dc7cd04d8fa0a4f446029576b789eb9752
+   2 git/objects/54/4cc08213649b6bf3005c02281da41630eb190b
+   2 git/objects/4c/bb4cd8da4a81da57e8e9ce76c26e8ff6a97111
+   2 git/objects/4b/542765f8c184b1a10501bb4182d64cbcae0527
+   2 git/objects/49/e695ba61cebea48a7881632b9689d4de7afbac
+   2 git/objects/48/4f18d23843454a3dc619dbb016a120a5fea827
+   2 git/objects/43/ca815e2dda4e4aff3c0e9a34443dd1913ac315
+   2 git/objects/3c/b87d154ba6e550546d35fe10f9affbc4773976
+   2 git/objects/3b/8f40431c484a576ff2b7ed71ef39c45fd145f5
+   2 git/objects/2c/2b4f52a9a280ccdd2c0a11cbe66d9681ec3dd4
+   2 git/objects/26/67b495d9bf9cc0e8822abdb454e414f242f2e6
+   2 git/objects/15/ef1be3a5880913251dca0536383150684e8677
+   2 git/objects/13/8ec76e35ab51f7358e61071444737b826f73f9
+   2 git/objects/06/f601f1c50b09dd6a72f4cdc2bd606722868016
+   2 git/objects/01/dc0fe0cf29b8600af85774dd763508deae5f5c
+   2 git/logs/refs/remotes/origin/main
+   2 git/logs/refs/heads/main
+   2 git/logs/HEAD
+   2 git/info/exclude
+   2 git/index
+   2 git/description
+   2 git/config
+   2 git/HEAD
+   2 git/FETCH_HEAD
+   2 git/COMMIT_EDITMSG
+   2 example
+   2 esprima
+   2 env
+   2 conf
+   2 closure-compiler
+   2 backup
+   1 walk/LICENSE
+   1 swf
+   1 stat/LICENSE
+   1 sql
+   1 scandir/LICENSE
+   1 save
+   1 remy/tests/fixtures/out2
+   1 remy/tests/fixtures/out1
+   1 remy/LICENSE
+   1 py
+   1 php
+   1 pegjs
+   1 opts
+   1 once/LICENSE
+   1 old
+   1 npmignore 2
+   1 nix
+   1 name/LICENSE
+   1 mdown
+   1 jscsrc
+   1 js/node_modules/string_decoder/LICENSE
+   1 js/node_modules/safe-buffer/LICENSE
+   1 js/node_modules/readable-stream/LICENSE
+   1 js/node_modules/isarray/Makefile
+   1 js/bin/benchmark
+   1 jison
+   1 isstring/LICENSE
+   1 isplainobject/LICENSE
+   1 isnumber/LICENSE
+   1 isinteger/LICENSE
+   1 isboolean/LICENSE
+   1 io/node_modules/ws/LICENSE
+   1 io/node_modules/cookie/LICENSE
+   1 io-client/node_modules/ws/LICENSE
+   1 io-adapter/node_modules/ws/LICENSE
+   1 io-adapter/node_modules/debug/LICENSE
+   1 io-adapter/LICENSE
+   1 includes/LICENSE
+   1 iml
+   1 gz
+   1 git/objects/ff/ccf3294cc73543895ec58ef3c81883152d8ac5
+   1 git/objects/fa/e40355953d0bc26b539811064f23ca942958ba
+   1 git/objects/f9/8df614eaac7352b7eb09678eef32cca818588f
+   1 git/objects/f9/0a8fca722e7a160b8c14cb10e0afddfe0b84e4
+   1 git/objects/f8/210704e30fef55a2c1655d04e495aaf1920900
+   1 git/objects/f7/5b5843a515e1be03267150bb4b03837d00d0c2
+   1 git/objects/f6/4a031ad12faaef30ce7470ed0476cb60a61bb0
+   1 git/objects/f5/58171a4a2a7f23d7803fddaa45cf9639cee856
+   1 git/objects/f5/336f0e986fc7ac4591a7fe98edf3ecd21a9f21
+   1 git/objects/f1/6d383e0da57350c6e19e98a09ebed63bb3468a
+   1 git/objects/f1/27f0771f80aa81e18fbec75ea75ea59ad9e7b7
+   1 git/objects/f0/9293b342a73bca0e140e57d294e11a0b94eba7
+   1 git/objects/f0/7b71adea221d43f3075ae98235555fabb642b6
+   1 git/objects/eb/c215495532016186c5c29da2e4a6dcf6608b66
+   1 git/objects/eb/a7b0b9d28e74627b26c64788b5631dcd6a64e0
+   1 git/objects/ea/fec5263b7c28909d087fda3b6465a3ba53881a
+   1 git/objects/ea/37efd279c70e414492ed1fc1edcbd66c703ae5
+   1 git/objects/e9/85853ed84acf10f62f639a4733083229c5a55d
+   1 git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+   1 git/objects/e5/f983a06c564ef1b07c48cdeb0937f606575d09
+   1 git/objects/e5/9e6c3e455193f435639e6be796d5edbe4a9a4c
+   1 git/objects/df/281760b28168efbdec1da90e0b337423ee6630
+   1 git/objects/dd/41e119d3b83461121e7b31aac3390be2f14fd3
+   1 git/objects/dc/88b878864733554bcc76dca3697fa81d2cb450
+   1 git/objects/dc/6488b07d3994ec26df2c559a92c6a00193f14c
+   1 git/objects/da/29a2f24c7aec9a33db6250366642fd1cfba8b2
+   1 git/objects/d8/7ad2d647552aca307f1e72656ae43872a3ae25
+   1 git/objects/d8/4b58b4b8e89116901a5ccb1fceb1584cf263f5
+   1 git/objects/d7/a5970a259d16b6542e0d8379a7c8c9e96db85a
+   1 git/objects/d6/8da1e4a936ed4f6d1f3ee269a7301061751706
+   1 git/objects/d3/398c1b1d66d11fee67ea1c56d4bd50ef7ce609
+   1 git/objects/cf/7b19100533dc77ce04ee9418fd90632c9df9db
+   1 git/objects/ce/cf7078f724c59fff0c732149d20f44374ded1f
+   1 git/objects/ce/730de822a542e279bdd6059190657d0a4c7d92
+   1 git/objects/cc/d9de607778a02e6f0528fdfbce916cbe6ca0b4
+   1 git/objects/cc/918e9353dc9d466b636cfcb073fe3cbc7c81fc
+   1 git/objects/cc/28b527e1f0c0abbd065f6b3b8779a0160cbd70
+   1 git/objects/c7/e8e300921c057a9b2202c05db1e238463576de
+   1 git/objects/c7/0dbb97e2bf85765b82ba7247f21ba3ee609d3b
+   1 git/objects/c6/63b56dec115c3924c8ea9454c4427707533567
+   1 git/objects/c4/8c79638df2f4f14bee217563f59c82c01cf98a
+   1 git/objects/c3/4b7e3425acfb28a42f5043292f3fd615b1868a
+   1 git/objects/c2/9c534ff6c8da9183e811e48e756884ab097ca3
+   1 git/objects/be/ebd2dca8d9103b91feeda1e60c3ed9dd53c65c
+   1 git/objects/bb/e54db0fc1de6acbf05943ceeced3a9954a52f0
+   1 git/objects/b9/6d78c2657a71804de6e412040f66a11a0c21f6
+   1 git/objects/b6/79cbd30863c54791a84580d0a89104152de688
+   1 git/objects/b6/5a65113b6f7f08ad1c7ab313336649e18ebe77
+   1 git/objects/b4/16a8d2d4ff93dbf2d156f696e584f13c7263ad
+   1 git/objects/b2/27324fbd6dda61eb2aa1e315976a0f51c5d1f8
+   1 git/objects/b0/f2147d487bc8f059a6763f60963343c761c517
+   1 git/objects/ad/7a1b6f31e2cc17a1bef2718c86875c81f8e4be
+   1 git/objects/a7/f21f48a2117695911e8dd085aa128e71fb9de6
+   1 git/objects/a7/9ab1d5f96384a311acc75a07e94e02a7a9f23e
+   1 git/objects/a1/503e76bdbefcc8ede54282b1ddc00bddf2b556
+   1 git/objects/9f/81280a9804bdb08c36a281e8b537c1356453e3
+   1 git/objects/9c/23dd78a927fb4451e09296adb98c5c97ff2c11
+   1 git/objects/9b/c4673a54ad5fb3d694cab80187c391b5f8968b
+   1 git/objects/9a/2cd48fe749aa616db521440fabb27de0f406fc
+   1 git/objects/98/bbde9c6bf6130ada617910b359cbc35d4a4477
+   1 git/objects/98/46e674fc12981a949454354e6e8ceee161e388
+   1 git/objects/94/838dc73f88dfd49a3d56a59eaca6707c184b6f
+   1 git/objects/93/d1b23e5ff72a70f7f65e0302b2992ac82e0c45
+   1 git/objects/92/e2b92789bdc71a517e7f49e401fd0bc82280d3
+   1 git/objects/8f/3b6a9a2d2e228fa02ca5c9ae7e4fdb8c585220
+   1 git/objects/8d/93f49586b2eed29bfb7c0e35a42d37a6b0a878
+   1 git/objects/8d/8fd30c81fcd0b9bf009d532660e5ef4eb92fb3
+   1 git/objects/8a/e0bf22c97dde0c188d5066e854e73d169a1aaf
+   1 git/objects/88/fef94eae2e80d88a1b6478d084ad23cc12e689
+   1 git/objects/87/089c2d088bf939d641f0183d56cba13a76167a
+   1 git/objects/86/999560099d72d39bfe5853a89e6710730f8748
+   1 git/objects/85/de131784ca92663bc2aafff970efb8b376dbd4
+   1 git/objects/85/6da7240a94ccf19e0efe1a9f8ffaae9dcc5b89
+   1 git/objects/84/552184171a920d912e0a80ed919ea71187fce6
+   1 git/objects/83/2d073f1d5183ad253b71b88ef66e361528d906
+   1 git/objects/81/c8641b374ee7b755569ba17692db413851cc5e
+   1 git/objects/7e/9f86ba24d5bd0c6feca2c8e2df880ce8ddcbed
+   1 git/objects/7e/6c387ed892c18fb5e38cfdf8c7ede1a8e154c9
+   1 git/objects/7d/10f89dba06a4120a93501b6d46b42c9e89bc51
+   1 git/objects/7c/8d65ed9e53dc7ea5112c37def5e437a949ba55
+   1 git/objects/7b/b6abb5519ab7a0ee486b9e3ee03101860806b7
+   1 git/objects/7a/e3326c8fd39f41486531bbadb30f25a50c93b3
+   1 git/objects/7a/295f08978b41f418453cfd91e11b2b7bfcdc6f
+   1 git/objects/79/d6c7f3dd5f30cfc633d38e8fb7f9f1ec231424
+   1 git/objects/76/0315eb15c9868fd98b4345da7cd1db156483cf
+   1 git/objects/74/9a022a5b137cc5e2c3db4e01c20bdd1463a69f
+   1 git/objects/71/00ca170152eb0cc375c60ddfbdc1972ff7bb8b
+   1 git/objects/70/160ba70aba3778c49346ac54c077a9996fe46e
+   1 git/objects/6e/f219c868b5010d75560206301499a7b6cf5264
+   1 git/objects/6e/6eb077edb33294e27de816f01e435be4c74c37
+   1 git/objects/6b/d96f282d2b89491b937d8e42d3ba002b111f1a
+   1 git/objects/64/731547f518994944694536991d2b137adf39aa
+   1 git/objects/63/eb155339839b1f7dbd2c4840f88bb0e2e192fd
+   1 git/objects/63/77df1a9ef136af56e62aa59ae24a493fd55926
+   1 git/objects/63/737c61c242662638440ac6ec44e0d4e5dea567
+   1 git/objects/61/1e8f6f11dba4a3edb365f259fe9850bff5aa66
+   1 git/objects/60/daeea3d1e16fe856ee3d4ed2ae1b1ef45552ac
+   1 git/objects/5f/c34d1da7c533f471668bad7c5589915fbf1812
+   1 git/objects/5e/191d46103c0f1416f5b60dc30512696a904acf
+   1 git/objects/58/03dd8764177b114836b16217427202aea040fa
+   1 git/objects/51/0d8ec4638c3606b7ea6ce1b5e27d1f2e7eae2e
+   1 git/objects/4f/3699be0ad34d1d037cfd21f41274c107421c6a
+   1 git/objects/4d/cb87f9203e3061459215c9a986ffb70db5630e
+   1 git/objects/4c/36afe3c9510d1f91d8f8751b646bc1e0af60ea
+   1 git/objects/43/4e9e2b3671694552560b74141390e564c97bdb
+   1 git/objects/42/63af2fbc5152b20ccdb0b44bc533d881a0231f
+   1 git/objects/3f/a5885e9c73aaef91abf9cde796096153f22d93
+   1 git/objects/3d/90afc7454887d00750f2b1e08541d5e11b465a
+   1 git/objects/3d/30e61421009051a9c1f5fd52e4cdd9708b11c5
+   1 git/objects/3b/be9243355effc65cfedd6e953fe5c32089a28a
+   1 git/objects/3b/978de096e6a61affaabf46aab4ad86fc4b798e
+   1 git/objects/3b/590c20ce65a959c26583c73e7c9b1755575d1a
+   1 git/objects/3b/2c7b45e704f02042f98751b0d8918feda446e7
+   1 git/objects/3a/c5eda1628d3ea48a028a9df2a3066c4216db3f
+   1 git/objects/38/04abac2a413c3063b11b821a5164fdeadfa21b
+   1 git/objects/37/176ac79791dadd1e828f1461ab60d3fc2eb74c
+   1 git/objects/35/be775abd648ef5ad85e24ce5d998839b33bd14
+   1 git/objects/35/2938865595d15f1179a3eaa84b29d0c5b24380
+   1 git/objects/2f/d7714b365ede92f484333cac96f1384a1b5e3b
+   1 git/objects/2c/68493a7c5d503abcaa629215d3280c86c35975
+   1 git/objects/2b/6cc946639796aacc2d63a9ace659a90273d9f6
+   1 git/objects/27/ee861e3016e56d48684bbd75593aba7714e405
+   1 git/objects/26/e5822e9ca2e71c9fbd14b2847cc323a3a4e3b4
+   1 git/objects/25/e7f94782ed85078a65d29935661daed8f46d0e
+   1 git/objects/25/828454f402b8981c5d2c69b251617603928c05
+   1 git/objects/23/e4eaf68a340ebdbf15d078759af91bfc002b1f
+   1 git/objects/1f/e8c2434d57b2bce7dfe401478ea7875356f32e
+   1 git/objects/1f/99f2562d6347038d4211c2ecb7a90f9eca32b9
+   1 git/objects/1e/9bb7d624f46a39bd77e7029dc52427afd53761
+   1 git/objects/1e/27d2a80b1b33e9469c67a2df99019f25c04efc
+   1 git/objects/1d/1fb518b75fa458dcf90eccde0f9b21d7df2d67
+   1 git/objects/1a/f850bc9152bcb08b0d1defa7c70c0c49eafa07
+   1 git/objects/16/e109c51b60cb678e956646395cb0cb4c68c6d2
+   1 git/objects/15/c1dbcaa796484271fbafd37f275a60b93da24c
+   1 git/objects/13/5956f4698b3b4ea47dbfd22d4b2c5beff1d6d4
+   1 git/objects/07/3e7456548164d8285cdfed0238e53164f55903
+   1 git/objects/07/149b3d09fe8d788b7084e869770d30a3fbbca9
+   1 git/objects/04/2f82ef3c4224eda583b0cb5ff9ba2beda5fd3c
+   1 git/objects/04/240a663a3ac43f8d71d3d13a7f326e24d66166
+   1 git/objects/03/c73a5797df54da637f07f9a5e2adfea84d1f2e
+   1 git/objects/02/7225e979a0660b5d6229170518e78a91f04a73
+   1 git/objects/01/c5dbb7956187c7c48fd7f620f0856208e0e148
+   1 git/objects/00/62ca31c0c12f74be614e991340c51de4acd51d
+   1 git/objects/00/425e6a7e680460c9380ff49db85e8743f8ddec
+   1 exe
+   1 eslintcache
+   1 covignore
+   1 bin
+   1 bak
+   1 applescript
+   1 /clockwork-backend/node_modules/xtend/LICENSE
+   1 /clockwork-backend/node_modules/xmlbuilder/LICENSE
+   1 /clockwork-backend/node_modules/winston/LICENSE
+   1 /clockwork-backend/node_modules/winston-transport/LICENSE
+   1 /clockwork-backend/node_modules/vary/LICENSE
+   1 /clockwork-backend/node_modules/validator/LICENSE
+   1 /clockwork-backend/node_modules/uuid/dist/bin/uuid
+   1 /clockwork-backend/node_modules/utils-merge/LICENSE
+   1 /clockwork-backend/node_modules/util-deprecate/LICENSE
+   1 /clockwork-backend/node_modules/url-parse/LICENSE
+   1 /clockwork-backend/node_modules/unpipe/LICENSE
+   1 /clockwork-backend/node_modules/undici-types/LICENSE
+   1 /clockwork-backend/node_modules/undefsafe/LICENSE
+   1 /clockwork-backend/node_modules/type-is/LICENSE
+   1 /clockwork-backend/node_modules/twilio/LICENSE
+   1 /clockwork-backend/node_modules/triple-beam/LICENSE
+   1 /clockwork-backend/node_modules/touch/LICENSE
+   1 /clockwork-backend/node_modules/toidentifier/LICENSE
+   1 /clockwork-backend/node_modules/to-regex-range/LICENSE
+   1 /clockwork-backend/node_modules/text-hex/LICENSE
+   1 /clockwork-backend/node_modules/string_decoder/LICENSE
+   1 /clockwork-backend/node_modules/statuses/LICENSE
+   1 /clockwork-backend/node_modules/stack-trace/Makefile
+   1 /clockwork-backend/node_modules/stack-trace/License
+   1 /clockwork-backend/node_modules/split2/LICENSE
+   1 /clockwork-backend/node_modules/simple-update-notifier/LICENSE
+   1 /clockwork-backend/node_modules/simple-swizzle/node_modules/is-arrayish/LICENSE
+   1 /clockwork-backend/node_modules/simple-swizzle/LICENSE
+   1 /clockwork-backend/node_modules/side-channel/LICENSE
+   1 /clockwork-backend/node_modules/side-channel-weakmap/LICENSE
+   1 /clockwork-backend/node_modules/side-channel-map/LICENSE
+   1 /clockwork-backend/node_modules/side-channel-list/LICENSE
+   1 /clockwork-backend/node_modules/setprototypeof/LICENSE
+   1 /clockwork-backend/node_modules/serve-static/LICENSE
+   1 /clockwork-backend/node_modules/send/node_modules/encodeurl/LICENSE
+   1 /clockwork-backend/node_modules/send/node_modules/debug/Makefile
+   1 /clockwork-backend/node_modules/send/node_modules/debug/LICENSE
+   1 /clockwork-backend/node_modules/send/LICENSE
+   1 /clockwork-backend/node_modules/semver/LICENSE
+   1 /clockwork-backend/node_modules/scmp/LICENSE
+   1 /clockwork-backend/node_modules/safer-buffer/LICENSE
+   1 /clockwork-backend/node_modules/safe-stable-stringify/LICENSE
+   1 /clockwork-backend/node_modules/safe-buffer/LICENSE
+   1 /clockwork-backend/node_modules/requires-port/LICENSE
+   1 /clockwork-backend/node_modules/redis/LICENSE
+   1 /clockwork-backend/node_modules/readdirp/LICENSE
+   1 /clockwork-backend/node_modules/readable-stream/LICENSE
+   1 /clockwork-backend/node_modules/raw-body/node_modules/iconv-lite/LICENSE
+   1 /clockwork-backend/node_modules/raw-body/LICENSE
+   1 /clockwork-backend/node_modules/range-parser/LICENSE
+   1 /clockwork-backend/node_modules/querystringify/LICENSE
+   1 /clockwork-backend/node_modules/proxy-from-env/LICENSE
+   1 /clockwork-backend/node_modules/proxy-addr/LICENSE
+   1 /clockwork-backend/node_modules/postgres-interval/license
+   1 /clockwork-backend/node_modules/postgres-date/license
+   1 /clockwork-backend/node_modules/postgres-bytea/license
+   1 /clockwork-backend/node_modules/postgres-array/license
+   1 /clockwork-backend/node_modules/picomatch/LICENSE
+   1 /clockwork-backend/node_modules/pg/LICENSE
+   1 /clockwork-backend/node_modules/pg-types/Makefile
+   1 /clockwork-backend/node_modules/pg-protocol/LICENSE
+   1 /clockwork-backend/node_modules/pg-pool/LICENSE
+   1 /clockwork-backend/node_modules/pg-int8/LICENSE
+   1 /clockwork-backend/node_modules/pg-connection-string/LICENSE
+   1 /clockwork-backend/node_modules/pg-cloudflare/LICENSE
+   1 /clockwork-backend/node_modules/path-to-regexp/LICENSE
+   1 /clockwork-backend/node_modules/parseurl/LICENSE
+   1 /clockwork-backend/node_modules/one-time/LICENSE
+   1 /clockwork-backend/node_modules/on-headers/LICENSE
+   1 /clockwork-backend/node_modules/on-finished/LICENSE
+   1 /clockwork-backend/node_modules/object-inspect/LICENSE
+   1 /clockwork-backend/node_modules/object-assign/license
+   1 /clockwork-backend/node_modules/normalize-path/LICENSE
+   1 /clockwork-backend/node_modules/nodemon/node_modules/supports-color/license
+   1 /clockwork-backend/node_modules/nodemon/node_modules/has-flag/license
+   1 /clockwork-backend/node_modules/nodemon/LICENSE
+   1 /clockwork-backend/node_modules/nodemailer/LICENSE
+   1 /clockwork-backend/node_modules/negotiator/LICENSE
+   1 /clockwork-backend/node_modules/minimatch/LICENSE
+   1 /clockwork-backend/node_modules/mime/LICENSE
+   1 /clockwork-backend/node_modules/mime-types/LICENSE
+   1 /clockwork-backend/node_modules/mime-db/LICENSE
+   1 /clockwork-backend/node_modules/methods/LICENSE
+   1 /clockwork-backend/node_modules/merge-descriptors/LICENSE
+   1 /clockwork-backend/node_modules/media-typer/LICENSE
+   1 /clockwork-backend/node_modules/math-intrinsics/LICENSE
+   1 /clockwork-backend/node_modules/logform/LICENSE
+   1 /clockwork-backend/node_modules/lodash/LICENSE
+   1 /clockwork-backend/node_modules/kuler/LICENSE
+   1 /clockwork-backend/node_modules/jws/LICENSE
+   1 /clockwork-backend/node_modules/jwa/LICENSE
+   1 /clockwork-backend/node_modules/jsonwebtoken/LICENSE
+   1 /clockwork-backend/node_modules/is-stream/license
+   1 /clockwork-backend/node_modules/is-number/LICENSE
+   1 /clockwork-backend/node_modules/is-glob/LICENSE
+   1 /clockwork-backend/node_modules/is-extglob/LICENSE
+   1 /clockwork-backend/node_modules/is-binary-path/license
+   1 /clockwork-backend/node_modules/inherits/LICENSE
+   1 /clockwork-backend/node_modules/ignore-by-default/LICENSE
+   1 /clockwork-backend/node_modules/http-errors/LICENSE
+   1 /clockwork-backend/node_modules/helmet/LICENSE
+   1 /clockwork-backend/node_modules/hasown/LICENSE
+   1 /clockwork-backend/node_modules/has-tostringtag/LICENSE
+   1 /clockwork-backend/node_modules/has-symbols/LICENSE
+   1 /clockwork-backend/node_modules/gopd/LICENSE
+   1 /clockwork-backend/node_modules/get-proto/LICENSE
+   1 /clockwork-backend/node_modules/get-intrinsic/LICENSE
+   1 /clockwork-backend/node_modules/function-bind/LICENSE
+   1 /clockwork-backend/node_modules/fsevents/LICENSE
+   1 /clockwork-backend/node_modules/fresh/LICENSE
+   1 /clockwork-backend/node_modules/forwarded/LICENSE
+   1 /clockwork-backend/node_modules/follow-redirects/LICENSE
+   1 /clockwork-backend/node_modules/finalhandler/node_modules/debug/Makefile
+   1 /clockwork-backend/node_modules/finalhandler/node_modules/debug/LICENSE
+   1 /clockwork-backend/node_modules/finalhandler/LICENSE
+   1 /clockwork-backend/node_modules/fill-range/LICENSE
+   1 /clockwork-backend/node_modules/fecha/LICENSE
+   1 /clockwork-backend/node_modules/express/node_modules/debug/Makefile
+   1 /clockwork-backend/node_modules/express/node_modules/debug/LICENSE
+   1 /clockwork-backend/node_modules/express/LICENSE
+   1 /clockwork-backend/node_modules/express-validator/LICENSE
+   1 /clockwork-backend/node_modules/etag/LICENSE
+   1 /clockwork-backend/node_modules/escape-html/LICENSE
+   1 /clockwork-backend/node_modules/es-set-tostringtag/LICENSE
+   1 /clockwork-backend/node_modules/es-object-atoms/LICENSE
+   1 /clockwork-backend/node_modules/es-errors/LICENSE
+   1 /clockwork-backend/node_modules/es-define-property/LICENSE
+   1 /clockwork-backend/node_modules/encodeurl/LICENSE
+   1 /clockwork-backend/node_modules/enabled/LICENSE
+   1 /clockwork-backend/node_modules/ee-first/LICENSE
+   1 /clockwork-backend/node_modules/ecdsa-sig-formatter/LICENSE
+   1 /clockwork-backend/node_modules/ecdsa-sig-formatter/CODEOWNERS
+   1 /clockwork-backend/node_modules/dunder-proto/LICENSE
+   1 /clockwork-backend/node_modules/dotenv/LICENSE
+   1 /clockwork-backend/node_modules/destroy/LICENSE
+   1 /clockwork-backend/node_modules/depd/LICENSE
+   1 /clockwork-backend/node_modules/delayed-stream/Makefile
+   1 /clockwork-backend/node_modules/delayed-stream/License
+   1 /clockwork-backend/node_modules/debug/LICENSE
+   1 /clockwork-backend/node_modules/dayjs/LICENSE
+   1 /clockwork-backend/node_modules/cors/LICENSE
+   1 /clockwork-backend/node_modules/cookie/LICENSE
+   1 /clockwork-backend/node_modules/content-type/LICENSE
+   1 /clockwork-backend/node_modules/content-disposition/LICENSE
+   1 /clockwork-backend/node_modules/concat-map/LICENSE
+   1 /clockwork-backend/node_modules/compression/node_modules/debug/Makefile
+   1 /clockwork-backend/node_modules/compression/node_modules/debug/LICENSE
+   1 /clockwork-backend/node_modules/compression/LICENSE
+   1 /clockwork-backend/node_modules/compressible/LICENSE
+   1 /clockwork-backend/node_modules/combined-stream/License
+   1 /clockwork-backend/node_modules/color/node_modules/color-name/LICENSE
+   1 /clockwork-backend/node_modules/color/node_modules/color-convert/LICENSE
+   1 /clockwork-backend/node_modules/color/LICENSE
+   1 /clockwork-backend/node_modules/color-string/LICENSE
+   1 /clockwork-backend/node_modules/color-name/LICENSE
+   1 /clockwork-backend/node_modules/cluster-key-slot/LICENSE
+   1 /clockwork-backend/node_modules/chokidar/node_modules/glob-parent/LICENSE
+   1 /clockwork-backend/node_modules/chokidar/LICENSE
+   1 /clockwork-backend/node_modules/call-bound/LICENSE
+   1 /clockwork-backend/node_modules/call-bind-apply-helpers/LICENSE
+   1 /clockwork-backend/node_modules/bytes/LICENSE
+   1 /clockwork-backend/node_modules/braces/LICENSE
+   1 /clockwork-backend/node_modules/brace-expansion/LICENSE
+   1 /clockwork-backend/node_modules/body-parser/node_modules/iconv-lite/LICENSE
+   1 /clockwork-backend/node_modules/body-parser/node_modules/debug/Makefile
+   1 /clockwork-backend/node_modules/body-parser/node_modules/debug/LICENSE
+   1 /clockwork-backend/node_modules/body-parser/LICENSE
+   1 /clockwork-backend/node_modules/binary-extensions/license
+   1 /clockwork-backend/node_modules/bcryptjs/bin/bcrypt
+   1 /clockwork-backend/node_modules/bcryptjs/LICENSE
+   1 /clockwork-backend/node_modules/base64id/LICENSE
+   1 /clockwork-backend/node_modules/axios/node_modules/form-data/License
+   1 /clockwork-backend/node_modules/axios/LICENSE
+   1 /clockwork-backend/node_modules/asynckit/LICENSE
+   1 /clockwork-backend/node_modules/async/LICENSE
+   1 /clockwork-backend/node_modules/array-flatten/LICENSE
+   1 /clockwork-backend/node_modules/anymatch/LICENSE
+   1 /clockwork-backend/node_modules/accepts/node_modules/negotiator/LICENSE
+   1 /clockwork-backend/node_modules/accepts/LICENSE
+   1 /clockwork-backend/node_modules/@types/triple-beam/LICENSE
+   1 /clockwork-backend/node_modules/@types/node/LICENSE
+   1 /clockwork-backend/node_modules/@types/cors/LICENSE
+   1 /clockwork-backend/node_modules/@redis/client/node_modules/yallist/LICENSE
+   1 /clockwork-backend/node_modules/@dabh/diagnostics/LICENSE
+   1 /clockwork-backend/node_modules/@colors/colors/LICENSE
+   1 /Clockwork-frontend/node_modules/yaml/LICENSE
+   1 /Clockwork-frontend/node_modules/yallist/LICENSE
+   1 /Clockwork-frontend/node_modules/xmlhttprequest-ssl/LICENSE
+   1 /Clockwork-frontend/node_modules/ws/LICENSE
+   1 /Clockwork-frontend/node_modules/wrap-ansi/license
+   1 /Clockwork-frontend/node_modules/wrap-ansi-cjs/node_modules/strip-ansi/license
+   1 /Clockwork-frontend/node_modules/wrap-ansi-cjs/node_modules/string-width/license
+   1 /Clockwork-frontend/node_modules/wrap-ansi-cjs/node_modules/ansi-styles/license
+   1 /Clockwork-frontend/node_modules/wrap-ansi-cjs/node_modules/ansi-regex/license
+   1 /Clockwork-frontend/node_modules/wrap-ansi-cjs/license
+   1 /Clockwork-frontend/node_modules/workbox-webpack-plugin/node_modules/webpack-sources/LICENSE
+   1 /Clockwork-frontend/node_modules/workbox-webpack-plugin/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/workbox-build/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/workbox-build/node_modules/json-schema-traverse/LICENSE
+   1 /Clockwork-frontend/node_modules/workbox-build/node_modules/fs-extra/LICENSE
+   1 /Clockwork-frontend/node_modules/workbox-build/node_modules/ajv/LICENSE
+   1 /Clockwork-frontend/node_modules/workbox-build/node_modules/@apideck/better-ajv-errors/LICENSE
+   1 /Clockwork-frontend/node_modules/which/bin/node-which
+   1 /Clockwork-frontend/node_modules/which/LICENSE
+   1 /Clockwork-frontend/node_modules/whatwg-encoding/node_modules/iconv-lite/LICENSE
+   1 /Clockwork-frontend/node_modules/webpack/node_modules/eslint-scope/LICENSE
+   1 /Clockwork-frontend/node_modules/webpack-manifest-plugin/node_modules/webpack-sources/LICENSE
+   1 /Clockwork-frontend/node_modules/webpack-manifest-plugin/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/webpack-dev-server/node_modules/ws/LICENSE
+   1 /Clockwork-frontend/node_modules/vite/node_modules/rollup/dist/bin/rollup
+   1 /Clockwork-frontend/node_modules/vite/node_modules/picomatch/LICENSE
+   1 /Clockwork-frontend/node_modules/vite/node_modules/fdir/LICENSE
+   1 /Clockwork-frontend/node_modules/v8-to-istanbul/node_modules/convert-source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/uuid/dist/bin/uuid
+   1 /Clockwork-frontend/node_modules/util-deprecate/LICENSE
+   1 /Clockwork-frontend/node_modules/use-sync-external-store/LICENSE
+   1 /Clockwork-frontend/node_modules/update-browserslist-db/LICENSE
+   1 /Clockwork-frontend/node_modules/typescript/bin/tsserver
+   1 /Clockwork-frontend/node_modules/typescript/bin/tsc
+   1 /Clockwork-frontend/node_modules/tsconfig-paths/node_modules/strip-bom/license
+   1 /Clockwork-frontend/node_modules/ts-interface-checker/LICENSE
+   1 /Clockwork-frontend/node_modules/tough-cookie/node_modules/universalify/LICENSE
+   1 /Clockwork-frontend/node_modules/to-regex-range/LICENSE
+   1 /Clockwork-frontend/node_modules/tinyglobby/node_modules/picomatch/LICENSE
+   1 /Clockwork-frontend/node_modules/tinyglobby/node_modules/fdir/LICENSE
+   1 /Clockwork-frontend/node_modules/thenify/LICENSE
+   1 /Clockwork-frontend/node_modules/thenify-all/LICENSE
+   1 /Clockwork-frontend/node_modules/terser/node_modules/commander/LICENSE
+   1 /Clockwork-frontend/node_modules/terser/bin/uglifyjs
+   1 /Clockwork-frontend/node_modules/terser/bin/terser
+   1 /Clockwork-frontend/node_modules/tempy/node_modules/type-fest/license
+   1 /Clockwork-frontend/node_modules/tar/node_modules/mkdirp/LICENSE
+   1 /Clockwork-frontend/node_modules/tailwindcss/src/value-parser/LICENSE
+   1 /Clockwork-frontend/node_modules/tailwindcss/src/css/LICENSE
+   1 /Clockwork-frontend/node_modules/tailwindcss/node_modules/lilconfig/LICENSE
+   1 /Clockwork-frontend/node_modules/tailwindcss/lib/value-parser/LICENSE
+   1 /Clockwork-frontend/node_modules/tailwindcss/lib/css/LICENSE
+   1 /Clockwork-frontend/node_modules/tailwindcss/LICENSE
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/supports-color/license
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/nth-check/LICENSE
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/has-flag/license
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/escape-string-regexp/license
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/domutils/node_modules/domelementtype/LICENSE
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/domutils/LICENSE
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/dom-serializer/LICENSE
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/css-what/LICENSE
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/css-select/LICENSE
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/color-name/LICENSE
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/color-convert/LICENSE
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/chalk/license
+   1 /Clockwork-frontend/node_modules/svgo/node_modules/ansi-styles/license
+   1 /Clockwork-frontend/node_modules/svgo/bin/svgo
+   1 /Clockwork-frontend/node_modules/supports-preserve-symlinks-flag/LICENSE
+   1 /Clockwork-frontend/node_modules/sucrase/node_modules/minimatch/LICENSE
+   1 /Clockwork-frontend/node_modules/sucrase/node_modules/glob/LICENSE
+   1 /Clockwork-frontend/node_modules/sucrase/node_modules/commander/LICENSE
+   1 /Clockwork-frontend/node_modules/sucrase/node_modules/brace-expansion/LICENSE
+   1 /Clockwork-frontend/node_modules/sucrase/bin/sucrase-node
+   1 /Clockwork-frontend/node_modules/sucrase/bin/sucrase
+   1 /Clockwork-frontend/node_modules/sucrase/LICENSE
+   1 /Clockwork-frontend/node_modules/strip-ansi/license
+   1 /Clockwork-frontend/node_modules/strip-ansi-cjs/node_modules/ansi-regex/license
+   1 /Clockwork-frontend/node_modules/strip-ansi-cjs/license
+   1 /Clockwork-frontend/node_modules/string-width/license
+   1 /Clockwork-frontend/node_modules/string-width-cjs/node_modules/strip-ansi/license
+   1 /Clockwork-frontend/node_modules/string-width-cjs/node_modules/ansi-regex/license
+   1 /Clockwork-frontend/node_modules/string-width-cjs/license
+   1 /Clockwork-frontend/node_modules/static-eval/node_modules/type-check/LICENSE
+   1 /Clockwork-frontend/node_modules/static-eval/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/static-eval/node_modules/prelude-ls/LICENSE
+   1 /Clockwork-frontend/node_modules/static-eval/node_modules/optionator/LICENSE
+   1 /Clockwork-frontend/node_modules/static-eval/node_modules/levn/LICENSE
+   1 /Clockwork-frontend/node_modules/stack-utils/node_modules/escape-string-regexp/license
+   1 /Clockwork-frontend/node_modules/source-map-support/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/source-map-js/LICENSE
+   1 /Clockwork-frontend/node_modules/shebang-regex/license
+   1 /Clockwork-frontend/node_modules/shebang-command/license
+   1 /Clockwork-frontend/node_modules/serve-index/node_modules/statuses/LICENSE
+   1 /Clockwork-frontend/node_modules/serve-index/node_modules/setprototypeof/LICENSE
+   1 /Clockwork-frontend/node_modules/serve-index/node_modules/inherits/LICENSE
+   1 /Clockwork-frontend/node_modules/serve-index/node_modules/http-errors/LICENSE
+   1 /Clockwork-frontend/node_modules/serve-index/node_modules/depd/LICENSE
+   1 /Clockwork-frontend/node_modules/serve-index/node_modules/debug/Makefile
+   1 /Clockwork-frontend/node_modules/serve-index/node_modules/debug/LICENSE
+   1 /Clockwork-frontend/node_modules/send/node_modules/encodeurl/LICENSE
+   1 /Clockwork-frontend/node_modules/send/node_modules/debug/Makefile
+   1 /Clockwork-frontend/node_modules/send/node_modules/debug/LICENSE
+   1 /Clockwork-frontend/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/schema-utils/node_modules/json-schema-traverse/LICENSE
+   1 /Clockwork-frontend/node_modules/schema-utils/node_modules/ajv/LICENSE
+   1 /Clockwork-frontend/node_modules/schema-utils/node_modules/ajv-keywords/LICENSE
+   1 /Clockwork-frontend/node_modules/scheduler/LICENSE
+   1 /Clockwork-frontend/node_modules/run-parallel/LICENSE
+   1 /Clockwork-frontend/node_modules/rollup/dist/bin/rollup
+   1 /Clockwork-frontend/node_modules/rollup-plugin-terser/node_modules/serialize-javascript/LICENSE
+   1 /Clockwork-frontend/node_modules/rollup-plugin-terser/node_modules/jest-worker/LICENSE
+   1 /Clockwork-frontend/node_modules/reusify/LICENSE
+   1 /Clockwork-frontend/node_modules/resolve/bin/resolve
+   1 /Clockwork-frontend/node_modules/resolve/LICENSE
+   1 /Clockwork-frontend/node_modules/resolve-url-loader/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/resolve-url-loader/node_modules/postcss/LICENSE
+   1 /Clockwork-frontend/node_modules/resolve-url-loader/node_modules/picocolors/LICENSE
+   1 /Clockwork-frontend/node_modules/resolve-url-loader/node_modules/convert-source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/reselect/LICENSE
+   1 /Clockwork-frontend/node_modules/regjsparser/node_modules/jsesc/bin/jsesc
+   1 /Clockwork-frontend/node_modules/regjsparser/bin/parser
+   1 /Clockwork-frontend/node_modules/readdirp/LICENSE
+   1 /Clockwork-frontend/node_modules/read-cache/LICENSE
+   1 /Clockwork-frontend/node_modules/react/LICENSE
+   1 /Clockwork-frontend/node_modules/react-refresh/LICENSE
+   1 /Clockwork-frontend/node_modules/react-redux/node_modules/react-is/LICENSE
+   1 /Clockwork-frontend/node_modules/react-is/LICENSE
+   1 /Clockwork-frontend/node_modules/react-hot-toast/LICENSE
+   1 /Clockwork-frontend/node_modules/react-dom/LICENSE
+   1 /Clockwork-frontend/node_modules/react-dev-utils/node_modules/p-locate/license
+   1 /Clockwork-frontend/node_modules/react-dev-utils/node_modules/p-limit/license
+   1 /Clockwork-frontend/node_modules/react-dev-utils/node_modules/locate-path/license
+   1 /Clockwork-frontend/node_modules/react-dev-utils/node_modules/loader-utils/LICENSE
+   1 /Clockwork-frontend/node_modules/react-dev-utils/node_modules/find-up/license
+   1 /Clockwork-frontend/node_modules/raw-body/node_modules/iconv-lite/LICENSE
+   1 /Clockwork-frontend/node_modules/queue-microtask/LICENSE
+   1 /Clockwork-frontend/node_modules/proxy-from-env/LICENSE
+   1 /Clockwork-frontend/node_modules/prop-types/node_modules/react-is/LICENSE
+   1 /Clockwork-frontend/node_modules/prop-types/LICENSE
+   1 /Clockwork-frontend/node_modules/pretty-format/node_modules/ansi-styles/license
+   1 /Clockwork-frontend/node_modules/postcss/LICENSE
+   1 /Clockwork-frontend/node_modules/postcss-value-parser/LICENSE
+   1 /Clockwork-frontend/node_modules/postcss-svgo/node_modules/svgo/bin/svgo
+   1 /Clockwork-frontend/node_modules/postcss-svgo/node_modules/svgo/LICENSE
+   1 /Clockwork-frontend/node_modules/postcss-svgo/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/postcss-svgo/node_modules/mdn-data/LICENSE
+   1 /Clockwork-frontend/node_modules/postcss-svgo/node_modules/css-tree/LICENSE
+   1 /Clockwork-frontend/node_modules/postcss-svgo/node_modules/commander/LICENSE
+   1 /Clockwork-frontend/node_modules/postcss-selector-parser/LICENSE-MIT
+   1 /Clockwork-frontend/node_modules/postcss-nested/LICENSE
+   1 /Clockwork-frontend/node_modules/postcss-modules-scope/node_modules/postcss-selector-parser/LICENSE-MIT
+   1 /Clockwork-frontend/node_modules/postcss-modules-local-by-default/node_modules/postcss-selector-parser/LICENSE-MIT
+   1 /Clockwork-frontend/node_modules/postcss-load-config/node_modules/lilconfig/LICENSE
+   1 /Clockwork-frontend/node_modules/postcss-load-config/LICENSE
+   1 /Clockwork-frontend/node_modules/postcss-js/LICENSE
+   1 /Clockwork-frontend/node_modules/postcss-import/LICENSE
+   1 /Clockwork-frontend/node_modules/pkg-up/node_modules/path-exists/license
+   1 /Clockwork-frontend/node_modules/pkg-up/node_modules/p-locate/license
+   1 /Clockwork-frontend/node_modules/pkg-up/node_modules/locate-path/license
+   1 /Clockwork-frontend/node_modules/pkg-up/node_modules/find-up/license
+   1 /Clockwork-frontend/node_modules/pirates/LICENSE
+   1 /Clockwork-frontend/node_modules/pify/license
+   1 /Clockwork-frontend/node_modules/picomatch/LICENSE
+   1 /Clockwork-frontend/node_modules/picocolors/LICENSE
+   1 /Clockwork-frontend/node_modules/path-scurry/node_modules/lru-cache/LICENSE
+   1 /Clockwork-frontend/node_modules/path-parse/LICENSE
+   1 /Clockwork-frontend/node_modules/path-key/license
+   1 /Clockwork-frontend/node_modules/object-hash/LICENSE
+   1 /Clockwork-frontend/node_modules/object-assign/license
+   1 /Clockwork-frontend/node_modules/normalize-range/license
+   1 /Clockwork-frontend/node_modules/normalize-path/LICENSE
+   1 /Clockwork-frontend/node_modules/node-releases/LICENSE
+   1 /Clockwork-frontend/node_modules/nanoid/LICENSE
+   1 /Clockwork-frontend/node_modules/mz/LICENSE
+   1 /Clockwork-frontend/node_modules/minipass/LICENSE
+   1 /Clockwork-frontend/node_modules/minimatch/LICENSE
+   1 /Clockwork-frontend/node_modules/mime-types/LICENSE
+   1 /Clockwork-frontend/node_modules/mime-db/LICENSE
+   1 /Clockwork-frontend/node_modules/micromatch/LICENSE
+   1 /Clockwork-frontend/node_modules/merge2/LICENSE
+   1 /Clockwork-frontend/node_modules/math-intrinsics/LICENSE
+   1 /Clockwork-frontend/node_modules/make-dir/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/lru-cache/LICENSE
+   1 /Clockwork-frontend/node_modules/loose-envify/LICENSE
+   1 /Clockwork-frontend/node_modules/lines-and-columns/LICENSE
+   1 /Clockwork-frontend/node_modules/lilconfig/LICENSE
+   1 /Clockwork-frontend/node_modules/jsesc/bin/jsesc
+   1 /Clockwork-frontend/node_modules/js-tokens/LICENSE
+   1 /Clockwork-frontend/node_modules/jiti/LICENSE
+   1 /Clockwork-frontend/node_modules/jest-worker/node_modules/supports-color/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/strip-ansi/node_modules/ansi-regex/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/strip-ansi/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/string-length/node_modules/char-regex/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/string-length/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/slash/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/react-is/LICENSE
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/pretty-format/LICENSE
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/jest-watcher/node_modules/strip-ansi/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/jest-watcher/node_modules/string-length/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/jest-watcher/LICENSE
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/jest-util/LICENSE
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/jest-regex-util/LICENSE
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/jest-message-util/node_modules/slash/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/jest-message-util/LICENSE
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/emittery/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/ansi-styles/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/@types/yargs/LICENSE
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/@jest/types/LICENSE
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/@jest/test-result/LICENSE
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/@jest/console/node_modules/slash/license
+   1 /Clockwork-frontend/node_modules/jest-watch-typeahead/node_modules/@jest/console/LICENSE
+   1 /Clockwork-frontend/node_modules/istanbul-lib-source-maps/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/istanbul-lib-report/node_modules/make-dir/license
+   1 /Clockwork-frontend/node_modules/istanbul-lib-instrument/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/isexe/LICENSE
+   1 /Clockwork-frontend/node_modules/is-number/LICENSE
+   1 /Clockwork-frontend/node_modules/is-glob/LICENSE
+   1 /Clockwork-frontend/node_modules/is-fullwidth-code-point/license
+   1 /Clockwork-frontend/node_modules/is-extglob/LICENSE
+   1 /Clockwork-frontend/node_modules/is-core-module/LICENSE
+   1 /Clockwork-frontend/node_modules/is-binary-path/license
+   1 /Clockwork-frontend/node_modules/import-fresh/node_modules/resolve-from/license
+   1 /Clockwork-frontend/node_modules/immer/LICENSE
+   1 /Clockwork-frontend/node_modules/hoist-non-react-statics/node_modules/react-is/LICENSE
+   1 /Clockwork-frontend/node_modules/he/bin/he
+   1 /Clockwork-frontend/node_modules/hasown/LICENSE
+   1 /Clockwork-frontend/node_modules/has-tostringtag/LICENSE
+   1 /Clockwork-frontend/node_modules/has-symbols/LICENSE
+   1 /Clockwork-frontend/node_modules/gopd/LICENSE
+   1 /Clockwork-frontend/node_modules/goober/prefixer/LICENSE
+   1 /Clockwork-frontend/node_modules/goober/LICENSE
+   1 /Clockwork-frontend/node_modules/global-prefix/node_modules/which/bin/which
+   1 /Clockwork-frontend/node_modules/global-prefix/node_modules/which/LICENSE
+   1 /Clockwork-frontend/node_modules/glob/LICENSE
+   1 /Clockwork-frontend/node_modules/glob-parent/LICENSE
+   1 /Clockwork-frontend/node_modules/get-proto/LICENSE
+   1 /Clockwork-frontend/node_modules/get-intrinsic/LICENSE
+   1 /Clockwork-frontend/node_modules/gensync/LICENSE
+   1 /Clockwork-frontend/node_modules/function-bind/LICENSE
+   1 /Clockwork-frontend/node_modules/fsevents/LICENSE
+   1 /Clockwork-frontend/node_modules/form-data/License
+   1 /Clockwork-frontend/node_modules/fork-ts-checker-webpack-plugin/node_modules/yaml/LICENSE
+   1 /Clockwork-frontend/node_modules/fork-ts-checker-webpack-plugin/node_modules/tapable/LICENSE
+   1 /Clockwork-frontend/node_modules/fork-ts-checker-webpack-plugin/node_modules/schema-utils/LICENSE
+   1 /Clockwork-frontend/node_modules/fork-ts-checker-webpack-plugin/node_modules/fs-extra/LICENSE
+   1 /Clockwork-frontend/node_modules/fork-ts-checker-webpack-plugin/node_modules/cosmiconfig/LICENSE
+   1 /Clockwork-frontend/node_modules/foreground-child/LICENSE
+   1 /Clockwork-frontend/node_modules/follow-redirects/LICENSE
+   1 /Clockwork-frontend/node_modules/finalhandler/node_modules/debug/Makefile
+   1 /Clockwork-frontend/node_modules/finalhandler/node_modules/debug/LICENSE
+   1 /Clockwork-frontend/node_modules/fill-range/LICENSE
+   1 /Clockwork-frontend/node_modules/filelist/node_modules/minimatch/LICENSE
+   1 /Clockwork-frontend/node_modules/filelist/node_modules/brace-expansion/LICENSE
+   1 /Clockwork-frontend/node_modules/file-loader/node_modules/schema-utils/LICENSE
+   1 /Clockwork-frontend/node_modules/fastq/LICENSE
+   1 /Clockwork-frontend/node_modules/fast-glob/node_modules/glob-parent/LICENSE
+   1 /Clockwork-frontend/node_modules/fast-glob/LICENSE
+   1 /Clockwork-frontend/node_modules/express/node_modules/debug/Makefile
+   1 /Clockwork-frontend/node_modules/express/node_modules/debug/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint/node_modules/p-locate/license
+   1 /Clockwork-frontend/node_modules/eslint/node_modules/p-limit/license
+   1 /Clockwork-frontend/node_modules/eslint/node_modules/locate-path/license
+   1 /Clockwork-frontend/node_modules/eslint/node_modules/js-yaml/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint/node_modules/find-up/license
+   1 /Clockwork-frontend/node_modules/eslint/node_modules/argparse/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint-webpack-plugin/node_modules/supports-color/license
+   1 /Clockwork-frontend/node_modules/eslint-webpack-plugin/node_modules/jest-worker/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint-plugin-react/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint-plugin-react/node_modules/resolve/bin/resolve
+   1 /Clockwork-frontend/node_modules/eslint-plugin-react/node_modules/resolve/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint-plugin-react/node_modules/doctrine/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint-plugin-import/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint-plugin-import/node_modules/doctrine/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint-plugin-import/node_modules/debug/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint-plugin-import/memo-parser/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint-module-utils/node_modules/debug/LICENSE
+   1 /Clockwork-frontend/node_modules/eslint-import-resolver-node/node_modules/debug/LICENSE
+   1 /Clockwork-frontend/node_modules/escodegen/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/escalade/license
+   1 /Clockwork-frontend/node_modules/esbuild/bin/esbuild
+   1 /Clockwork-frontend/node_modules/es-set-tostringtag/LICENSE
+   1 /Clockwork-frontend/node_modules/es-object-atoms/LICENSE
+   1 /Clockwork-frontend/node_modules/es-errors/LICENSE
+   1 /Clockwork-frontend/node_modules/es-define-property/LICENSE
+   1 /Clockwork-frontend/node_modules/electron-to-chromium/LICENSE
+   1 /Clockwork-frontend/node_modules/dunder-proto/LICENSE
+   1 /Clockwork-frontend/node_modules/didyoumean/LICENSE
+   1 /Clockwork-frontend/node_modules/detect-port-alt/node_modules/debug/Makefile
+   1 /Clockwork-frontend/node_modules/detect-port-alt/node_modules/debug/LICENSE
+   1 /Clockwork-frontend/node_modules/delayed-stream/Makefile
+   1 /Clockwork-frontend/node_modules/delayed-stream/License
+   1 /Clockwork-frontend/node_modules/debug/LICENSE
+   1 /Clockwork-frontend/node_modules/csstype/LICENSE
+   1 /Clockwork-frontend/node_modules/csso/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/csso/node_modules/mdn-data/LICENSE
+   1 /Clockwork-frontend/node_modules/csso/node_modules/css-tree/LICENSE
+   1 /Clockwork-frontend/node_modules/cssnano/node_modules/yaml/LICENSE
+   1 /Clockwork-frontend/node_modules/cssesc/bin/cssesc
+   1 /Clockwork-frontend/node_modules/css-tree/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/css-minimizer-webpack-plugin/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/cross-spawn/LICENSE
+   1 /Clockwork-frontend/node_modules/cosmiconfig/node_modules/yaml/LICENSE
+   1 /Clockwork-frontend/node_modules/convert-source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/compression/node_modules/debug/Makefile
+   1 /Clockwork-frontend/node_modules/compression/node_modules/debug/LICENSE
+   1 /Clockwork-frontend/node_modules/commander/LICENSE
+   1 /Clockwork-frontend/node_modules/combined-stream/License
+   1 /Clockwork-frontend/node_modules/color-name/LICENSE
+   1 /Clockwork-frontend/node_modules/color-convert/LICENSE
+   1 /Clockwork-frontend/node_modules/coa/node_modules/supports-color/license
+   1 /Clockwork-frontend/node_modules/coa/node_modules/has-flag/license
+   1 /Clockwork-frontend/node_modules/coa/node_modules/escape-string-regexp/license
+   1 /Clockwork-frontend/node_modules/coa/node_modules/color-name/LICENSE
+   1 /Clockwork-frontend/node_modules/coa/node_modules/color-convert/LICENSE
+   1 /Clockwork-frontend/node_modules/coa/node_modules/chalk/license
+   1 /Clockwork-frontend/node_modules/coa/node_modules/ansi-styles/license
+   1 /Clockwork-frontend/node_modules/clean-css/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/chokidar/node_modules/glob-parent/LICENSE
+   1 /Clockwork-frontend/node_modules/chokidar/LICENSE
+   1 /Clockwork-frontend/node_modules/caniuse-lite/LICENSE
+   1 /Clockwork-frontend/node_modules/camelcase-css/license
+   1 /Clockwork-frontend/node_modules/call-bind-apply-helpers/LICENSE
+   1 /Clockwork-frontend/node_modules/browserslist/LICENSE
+   1 /Clockwork-frontend/node_modules/braces/LICENSE
+   1 /Clockwork-frontend/node_modules/brace-expansion/LICENSE
+   1 /Clockwork-frontend/node_modules/body-parser/node_modules/iconv-lite/LICENSE
+   1 /Clockwork-frontend/node_modules/body-parser/node_modules/debug/Makefile
+   1 /Clockwork-frontend/node_modules/body-parser/node_modules/debug/LICENSE
+   1 /Clockwork-frontend/node_modules/binary-extensions/license
+   1 /Clockwork-frontend/node_modules/babel-preset-react-app/node_modules/@babel/plugin-proposal-private-property-in-object/LICENSE
+   1 /Clockwork-frontend/node_modules/babel-plugin-polyfill-corejs2/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/babel-loader/node_modules/schema-utils/LICENSE
+   1 /Clockwork-frontend/node_modules/axios/node_modules/form-data/License
+   1 /Clockwork-frontend/node_modules/axios/LICENSE
+   1 /Clockwork-frontend/node_modules/autoprefixer/bin/autoprefixer
+   1 /Clockwork-frontend/node_modules/autoprefixer/LICENSE
+   1 /Clockwork-frontend/node_modules/asynckit/LICENSE
+   1 /Clockwork-frontend/node_modules/anymatch/LICENSE
+   1 /Clockwork-frontend/node_modules/any-promise/LICENSE
+   1 /Clockwork-frontend/node_modules/ansi-styles/license
+   1 /Clockwork-frontend/node_modules/ansi-regex/license
+   1 /Clockwork-frontend/node_modules/@vitejs/plugin-react/node_modules/react-refresh/LICENSE
+   1 /Clockwork-frontend/node_modules/@vitejs/plugin-react/LICENSE
+   1 /Clockwork-frontend/node_modules/@typescript-eslint/utils/node_modules/eslint-scope/LICENSE
+   1 /Clockwork-frontend/node_modules/@types/use-sync-external-store/LICENSE
+   1 /Clockwork-frontend/node_modules/@types/react/LICENSE
+   1 /Clockwork-frontend/node_modules/@types/react-dom/LICENSE
+   1 /Clockwork-frontend/node_modules/@types/prop-types/LICENSE
+   1 /Clockwork-frontend/node_modules/@types/express/node_modules/@types/express-serve-static-core/LICENSE
+   1 /Clockwork-frontend/node_modules/@types/estree/LICENSE
+   1 /Clockwork-frontend/node_modules/@types/babel__traverse/LICENSE
+   1 /Clockwork-frontend/node_modules/@types/babel__template/LICENSE
+   1 /Clockwork-frontend/node_modules/@types/babel__generator/LICENSE
+   1 /Clockwork-frontend/node_modules/@types/babel__core/LICENSE
+   1 /Clockwork-frontend/node_modules/@tailwindcss/postcss/node_modules/tailwindcss/LICENSE
+   1 /Clockwork-frontend/node_modules/@tailwindcss/node/node_modules/tailwindcss/LICENSE
+   1 /Clockwork-frontend/node_modules/@tailwindcss/node/node_modules/magic-string/LICENSE
+   1 /Clockwork-frontend/node_modules/@tailwindcss/node/node_modules/jiti/LICENSE
+   1 /Clockwork-frontend/node_modules/@stripe/stripe-js/LICENSE
+   1 /Clockwork-frontend/node_modules/@stripe/react-stripe-js/LICENSE
+   1 /Clockwork-frontend/node_modules/@standard-schema/utils/LICENSE
+   1 /Clockwork-frontend/node_modules/@standard-schema/spec/LICENSE
+   1 /Clockwork-frontend/node_modules/@rollup/pluginutils/node_modules/@types/estree/LICENSE
+   1 /Clockwork-frontend/node_modules/@rolldown/pluginutils/LICENSE
+   1 /Clockwork-frontend/node_modules/@reduxjs/toolkit/LICENSE
+   1 /Clockwork-frontend/node_modules/@pkgjs/parseargs/LICENSE
+   1 /Clockwork-frontend/node_modules/@nicolo-ribaudo/eslint-scope-5-internals/node_modules/eslint-scope/LICENSE
+   1 /Clockwork-frontend/node_modules/@jridgewell/trace-mapping/LICENSE
+   1 /Clockwork-frontend/node_modules/@jridgewell/sourcemap-codec/LICENSE
+   1 /Clockwork-frontend/node_modules/@jridgewell/resolve-uri/LICENSE
+   1 /Clockwork-frontend/node_modules/@jridgewell/gen-mapping/LICENSE
+   1 /Clockwork-frontend/node_modules/@jest/transform/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/@jest/transform/node_modules/convert-source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/@jest/source-map/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/@jest/reporters/node_modules/source-map/LICENSE
+   1 /Clockwork-frontend/node_modules/@istanbuljs/load-nyc-config/node_modules/camelcase/license
+   1 /Clockwork-frontend/node_modules/@isaacs/cliui/node_modules/wrap-ansi/license
+   1 /Clockwork-frontend/node_modules/@isaacs/cliui/node_modules/strip-ansi/license
+   1 /Clockwork-frontend/node_modules/@isaacs/cliui/node_modules/string-width/license
+   1 /Clockwork-frontend/node_modules/@isaacs/cliui/node_modules/ansi-styles/license
+   1 /Clockwork-frontend/node_modules/@isaacs/cliui/node_modules/ansi-regex/license
+   1 /Clockwork-frontend/node_modules/@eslint/eslintrc/node_modules/js-yaml/LICENSE
+   1 /Clockwork-frontend/node_modules/@eslint/eslintrc/node_modules/argparse/LICENSE
+   1 /Clockwork-frontend/node_modules/@esbuild/darwin-x64/bin/esbuild
+   1 /Clockwork-frontend/node_modules/@babel/types/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/traverse/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/template/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/preset-env/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/plugin-transform-runtime/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/plugin-transform-react-jsx-source/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/plugin-transform-react-jsx-self/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/parser/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helpers/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helper-validator-option/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helper-validator-identifier/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helper-string-parser/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helper-plugin-utils/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helper-module-transforms/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helper-module-imports/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helper-globals/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helper-create-regexp-features-plugin/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helper-create-class-features-plugin/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helper-compilation-targets/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/helper-compilation-targets/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/generator/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/eslint-parser/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/eslint-parser/node_modules/eslint-visitor-keys/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/core/node_modules/semver/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/core/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/compat-data/LICENSE
+   1 /Clockwork-frontend/node_modules/@babel/code-frame/LICENSE
+   1 /Clockwork-frontend/node_modules/@ampproject/remapping/LICENSE
+   1 /Clockwork-frontend/node_modules/@alloc/quick-lru/license
+
+=== LARGEST FILES ===
+-rw-r--r--@ 1 moderndavinci  staff    53M Jul 23 12:06 ./Clockwork-frontend/node_modules/.cache/default-development/1.pack
+-rw-r--r--@ 1 moderndavinci  staff    18M Jul 23 12:06 ./Clockwork-frontend/node_modules/.cache/default-development/0.pack
+-rw-r--r--@ 1 moderndavinci  staff    11M Jul 23 11:13 ./Clockwork-frontend/node_modules/typescript/lib/tsserverlibrary.js
+-rw-r--r--@ 1 moderndavinci  staff    11M Jul 23 11:13 ./Clockwork-frontend/node_modules/typescript/lib/tsserver.js
+-rw-r--r--@ 1 moderndavinci  staff    10M Jul 23 11:13 ./Clockwork-frontend/node_modules/typescript/lib/typescriptServices.js
+-rw-r--r--@ 1 moderndavinci  staff    10M Jul 23 11:13 ./Clockwork-frontend/node_modules/typescript/lib/typescript.js
+-rwxr-xr-x@ 2 moderndavinci  staff   9.8M Jul 24 15:12 ./Clockwork-frontend/node_modules/esbuild/bin/esbuild
+-rwxr-xr-x@ 2 moderndavinci  staff   9.8M Jul 24 15:12 ./Clockwork-frontend/node_modules/@esbuild/darwin-x64/bin/esbuild
+-rw-r--r--@ 1 moderndavinci  staff   7.8M Jul 23 11:13 ./Clockwork-frontend/node_modules/typescript/lib/typingsInstaller.js
+-rw-r--r--@ 1 moderndavinci  staff   5.9M Jul 23 11:13 ./Clockwork-frontend/node_modules/typescript/lib/tsc.js
+-rw-r--r--@ 1 moderndavinci  staff   4.3M Jul 24 15:12 ./Clockwork-frontend/node_modules/tailwindcss/peers/index.js
+-rw-r--r--@ 1 moderndavinci  staff   3.2M Jul 23 11:12 ./Clockwork-frontend/node_modules/rollup/dist/rollup.browser.js.map
+-rw-r--r--@ 1 moderndavinci  staff   2.8M Jul 23 11:31 ./Clockwork-frontend/node_modules/.cache/babel-loader/aaa26d1f973191be7bf24aa49cadad06e39939620ec7e784a5f59481e10f906f.json
+-rw-r--r--@ 1 moderndavinci  staff   2.6M Jul 23 11:29 ./Clockwork-frontend/node_modules/@reduxjs/toolkit/dist/query/react/rtk-query-react.umd.js.map
+-rw-r--r--  1 moderndavinci  staff   2.6M Jul 24 15:12 ./Clockwork-frontend/node_modules/@rollup/rollup-darwin-x64/rollup.darwin-x64.node
+-rw-r--r--@ 1 moderndavinci  staff   2.4M Jul 23 11:25 ./Clockwork-frontend/node_modules/.cache/babel-loader/3e012664c8de4d8c0809604f047bda4e112e44ae72811418f690619fd6af5e37.json
+-rw-r--r--  1 moderndavinci  staff   2.0M Jul 24 15:12 ./Clockwork-frontend/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js
+-rw-r--r--@ 1 moderndavinci  staff   1.8M Jul 23 12:06 ./Clockwork-frontend/node_modules/.cache/default-development/index.pack
+-rw-r--r--@ 1 moderndavinci  staff   1.8M Jul 23 11:50 ./Clockwork-frontend/node_modules/.cache/default-development/index.pack.old
+-rw-r--r--@ 1 moderndavinci  staff   1.8M Jul 23 11:29 ./Clockwork-frontend/node_modules/@tailwindcss/node/node_modules/jiti/dist/babel.cjs
+
+=== DIRECTORY STRUCTURE (3 levels) ===
+.
+./clockwork-backend
+./clockwork-backend/middleware
+./clockwork-backend/.vercel
+./clockwork-backend/config
+./clockwork-backend/node_modules
+./clockwork-backend/node_modules/jws
+./clockwork-backend/node_modules/jws/lib
+./clockwork-backend/node_modules/helmet
+./clockwork-backend/node_modules/triple-beam
+./clockwork-backend/node_modules/triple-beam/config
+./clockwork-backend/node_modules/triple-beam/.nyc_output
+./clockwork-backend/node_modules/triple-beam/.nyc_output/processinfo
+./clockwork-backend/node_modules/simple-swizzle
+./clockwork-backend/node_modules/simple-swizzle/node_modules
+./clockwork-backend/node_modules/simple-swizzle/node_modules/is-arrayish
+./clockwork-backend/node_modules/pg-int8
+./clockwork-backend/node_modules/destroy
+./clockwork-backend/node_modules/@types
+./clockwork-backend/node_modules/@types/triple-beam
+./clockwork-backend/node_modules/@types/cors
+./clockwork-backend/node_modules/@types/node
+./clockwork-backend/node_modules/@types/node/compatibility
+./clockwork-backend/node_modules/@types/node/timers
+./clockwork-backend/node_modules/@types/node/stream
+./clockwork-backend/node_modules/@types/node/readline
+./clockwork-backend/node_modules/@types/node/assert
+./clockwork-backend/node_modules/@types/node/ts5.7
+./clockwork-backend/node_modules/@types/node/ts5.7/compatibility
+./clockwork-backend/node_modules/@types/node/ts5.6
+./clockwork-backend/node_modules/@types/node/ts5.6/compatibility
+./clockwork-backend/node_modules/@types/node/ts5.1
+./clockwork-backend/node_modules/@types/node/ts5.1/compatibility
+./clockwork-backend/node_modules/@types/node/dns
+./clockwork-backend/node_modules/@types/node/fs
+./clockwork-backend/node_modules/lodash.includes
+./clockwork-backend/node_modules/lodash
+./clockwork-backend/node_modules/lodash/fp
+./clockwork-backend/node_modules/on-headers
+./clockwork-backend/node_modules/jwa
+./clockwork-backend/node_modules/.bin
+./clockwork-backend/node_modules/toidentifier
+./clockwork-backend/node_modules/@redis
+./clockwork-backend/node_modules/@redis/time-series
+./clockwork-backend/node_modules/@redis/time-series/dist
+./clockwork-backend/node_modules/@redis/time-series/dist/commands
+./clockwork-backend/node_modules/@redis/graph
+./clockwork-backend/node_modules/@redis/graph/dist
+./clockwork-backend/node_modules/@redis/graph/dist/commands
+./clockwork-backend/node_modules/@redis/bloom
+./clockwork-backend/node_modules/@redis/bloom/dist
+./clockwork-backend/node_modules/@redis/bloom/dist/commands
+./clockwork-backend/node_modules/@redis/bloom/dist/commands/top-k
+./clockwork-backend/node_modules/@redis/bloom/dist/commands/t-digest
+./clockwork-backend/node_modules/@redis/bloom/dist/commands/bloom
+./clockwork-backend/node_modules/@redis/bloom/dist/commands/cuckoo
+./clockwork-backend/node_modules/@redis/bloom/dist/commands/count-min-sketch
+./clockwork-backend/node_modules/@redis/search
+./clockwork-backend/node_modules/@redis/search/dist
+./clockwork-backend/node_modules/@redis/search/dist/commands
+./clockwork-backend/node_modules/@redis/json
+./clockwork-backend/node_modules/@redis/json/dist
+./clockwork-backend/node_modules/@redis/json/dist/commands
+./clockwork-backend/node_modules/@redis/client
+./clockwork-backend/node_modules/@redis/client/dist
+./clockwork-backend/node_modules/@redis/client/dist/lib
+./clockwork-backend/node_modules/@redis/client/dist/lib/cluster
+./clockwork-backend/node_modules/@redis/client/dist/lib/commands
+./clockwork-backend/node_modules/@redis/client/dist/lib/client
+./clockwork-backend/node_modules/@redis/client/dist/lib/client/RESP2
+./clockwork-backend/node_modules/@redis/client/dist/lib/client/RESP2/composers
+./clockwork-backend/node_modules/@redis/client/node_modules
+./clockwork-backend/node_modules/@redis/client/node_modules/yallist
+./clockwork-backend/node_modules/content-type
+./clockwork-backend/node_modules/es-errors
+./clockwork-backend/node_modules/es-errors/test
+./clockwork-backend/node_modules/es-errors/.github
+./clockwork-backend/node_modules/agent-base
+./clockwork-backend/node_modules/agent-base/dist
+./clockwork-backend/node_modules/agent-base/dist/src
+./clockwork-backend/node_modules/agent-base/src
+./clockwork-backend/node_modules/colorspace
+./clockwork-backend/node_modules/ms
+./clockwork-backend/node_modules/content-disposition
+./clockwork-backend/node_modules/math-intrinsics
+./clockwork-backend/node_modules/math-intrinsics/test
+./clockwork-backend/node_modules/math-intrinsics/constants
+./clockwork-backend/node_modules/math-intrinsics/.github
+./clockwork-backend/node_modules/methods
+./clockwork-backend/node_modules/dotenv
+./clockwork-backend/node_modules/dotenv/lib
+./clockwork-backend/node_modules/lodash.isstring
+./clockwork-backend/node_modules/has-tostringtag
+./clockwork-backend/node_modules/has-tostringtag/test
+./clockwork-backend/node_modules/has-tostringtag/test/shams
+./clockwork-backend/node_modules/has-tostringtag/.github
+./clockwork-backend/node_modules/validator
+./clockwork-backend/node_modules/validator/lib
+./clockwork-backend/node_modules/validator/lib/util
+./clockwork-backend/node_modules/validator/es
+
+=== TOP-LEVEL CONTENTS ===
+total 856
+drwxr-xr-x@ 11 moderndavinci  staff     352 Aug  2 10:51 .
+drwx------@ 18 moderndavinci  staff     576 Aug  2 10:48 ..
+-rw-r--r--@  1 moderndavinci  staff   10244 Aug  2 10:49 .DS_Store
+drwxr-xr-x@ 16 moderndavinci  staff     512 Aug  2 10:48 Billing-system
+drwxr-xr-x@  3 moderndavinci  staff      96 Aug  2 10:49 ClockWorkHub
+drwxr-xr-x@ 22 moderndavinci  staff     704 Aug  2 10:48 Clockwork-frontend
+drwxr-xr-x@ 10 moderndavinci  staff     320 Aug  2 01:47 analysis-reports
+drwxr-xr-x@ 68 moderndavinci  staff    2176 Aug  2 10:49 clockwork-backend
+-rw-r--r--   1 moderndavinci  staff   61945 Aug  2 10:54 folder_analysis.txt
+-rw-r--r--@  1 moderndavinci  staff  349789 Aug  1 12:45 index copy 2.html
+-rw-r--r--@  1 moderndavinci  staff    5486 Aug  2 01:39 project-summary.md
+
+=== DIRECTORY SIZES ===
+608M	Clockwork-frontend/
+ 48M	clockwork-backend/
+260K	ClockWorkHub/
+148K	Billing-system/
+ 48K	analysis-reports/

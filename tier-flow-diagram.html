@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clockwork Tier System Flow</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #60a5fa;
+            margin-bottom: 40px;
+        }
+        
+        .tier-flow {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .tier-column {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 20px;
+            border: 2px solid #334155;
+        }
+        
+        .tier-column h2 {
+            color: #60a5fa;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        
+        .tier-box {
+            background: #334155;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .tier-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        .tier-name {
+            font-weight: bold;
+            color: #f0f9ff;
+            margin-bottom: 5px;
+        }
+        
+        .tier-price {
+            color: #10b981;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .tier-features {
+            font-size: 0.9em;
+            color: #cbd5e1;
+        }
+        
+        .flow-section {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 2px solid #334155;
+        }
+        
+        .flow-section h3 {
+            color: #60a5fa;
+            margin-bottom: 20px;
+        }
+        
+        .flow-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .flow-step {
+            background: #334155;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            margin: 10px;
+            min-width: 150px;
+        }
+        
+        .flow-arrow {
+            color: #60a5fa;
+            font-size: 2em;
+            margin: 0 10px;
+        }
+        
+        .automation-feature {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #60a5fa;
+        }
+        
+        .feature-title {
+            color: #60a5fa;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .example-box {
+            background: #0f172a;
+            border: 2px dashed #60a5fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .example-title {
+            color: #10b981;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 1200px) {
+            .tier-flow {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .tier-flow {
+                grid-template-columns: 1fr;
+            }
+            
+            .flow-diagram {
+                flex-direction: column;
+            }
+            
+            .flow-arrow {
+                transform: rotate(90deg);
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏋️ Clockwork Multi-Tier System Architecture</h1>
+        
+        <div class="tier-flow">
+            <!-- Individual Tiers -->
+            <div class="tier-column">
+                <h2>👤 Individual Users</h2>
+                <div class="tier-box">
+                    <div class="tier-name">Free Explorer</div>
+                    <div class="tier-price">$0/month</div>
+                    <div class="tier-features">
+                        • 3 workouts/week<br>
+                        • Basic tracking<br>
+                        • Community access
+                    </div>
+                </div>
+                <div class="tier-box">
+                    <div class="tier-name">Solo Athlete</div>
+                    <div class="tier-price">$14.99/month</div>
+                    <div class="tier-features">
+                        • Unlimited workouts<br>
+                        • AI features (limited)<br>
+                        • Progress analytics
+                    </div>
+                </div>
+                <div class="tier-box">
+                    <div class="tier-name">Premium Solo</div>
+                    <div class="tier-price">$29.99/month</div>
+                    <div class="tier-features">
+                        • Unlimited AI<br>
+                        • Advanced analytics<br>
+                        • Priority support
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Specialist Tiers -->
+            <div class="tier-column">
+                <h2>👨‍🏫 Trainers/Specialists</h2>
+                <div class="tier-box">
+                    <div class="tier-name">Trainer Starter</div>
+                    <div class="tier-price">$49.99/month</div>
+                    <div class="tier-features">
+                        • 10 clients included<br>
+                        • +$2.50/extra client<br>
+                        • Basic white-label
+                    </div>
+                </div>
+                <div class="tier-box">
+                    <div class="tier-name">Trainer Pro</div>
+                    <div class="tier-price">$99.99/month</div>
+                    <div class="tier-features">
+                        • 50 clients included<br>
+                        • +$2.00/extra client<br>
+                        • Full white-label app
+                    </div>
+                </div>
+                <div class="tier-box">
+                    <div class="tier-name">Master Trainer</div>
+                    <div class="tier-price">$249.99/month</div>
+                    <div class="tier-features">
+                        • 200 clients included<br>
+                        • +$1.50/extra client<br>
+                        • API access & teams
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gym Tiers -->
+            <div class="tier-column">
+                <h2>🏢 Gyms</h2>
+                <div class="tier-box">
+                    <div class="tier-name">Gym Starter</div>
+                    <div class="tier-price">$299.99/month</div>
+                    <div class="tier-features">
+                        • 100 members<br>
+                        • 5 trainer accounts<br>
+                        • Basic management
+                    </div>
+                </div>
+                <div class="tier-box">
+                    <div class="tier-name">Gym Standard</div>
+                    <div class="tier-price">$599.99/month</div>
+                    <div class="tier-features">
+                        • 500 members<br>
+                        • 20 trainer accounts<br>
+                        • Advanced features
+                    </div>
+                </div>
+                <div class="tier-box">
+                    <div class="tier-name">Gym Premium</div>
+                    <div class="tier-price">$999.99/month</div>
+                    <div class="tier-features">
+                        • 1000 members<br>
+                        • 50 trainer accounts<br>
+                        • Multi-location
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enterprise -->
+            <div class="tier-column">
+                <h2>🏛️ Enterprise</h2>
+                <div class="tier-box">
+                    <div class="tier-name">Enterprise Custom</div>
+                    <div class="tier-price">$2,499+/month</div>
+                    <div class="tier-features">
+                        • Unlimited everything<br>
+                        • Custom development<br>
+                        • Dedicated support<br>
+                        • On-premise option<br>
+                        • SLA guarantees<br>
+                        • Custom AI models
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- How It Works -->
+        <div class="flow-section">
+            <h3>🔄 How the Automation Works</h3>
+            
+            <div class="example-box">
+                <div class="example-title">Example 1: Trainer Adds New Client</div>
+                <div class="flow-diagram">
+                    <div class="flow-step">
+                        Trainer sends<br>invite link
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        Client signs up<br>(Free account)
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        System checks<br>trainer's slots
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        Auto-assigns or<br>charges overage
+                    </div>
+                </div>
+            </div>
+            
+            <div class="example-box">
+                <div class="example-title">Example 2: Automatic Tier Upgrade</div>
+                <div class="flow-diagram">
+                    <div class="flow-step">
+                        Trainer hits<br>45/50 clients
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        System sends<br>upgrade prompt
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        At 51 clients:<br>Auto-upgrade or<br>overage billing
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        Seamless<br>transition
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Key Automation Features -->
+        <div class="flow-section">
+            <h3>🤖 Key Automation Features</h3>
+            
+            <div class="automation-feature">
+                <div class="feature-title">Smart Billing</div>
+                <div>• Automatic overage detection and charging</div>
+                <div>• Commission processing for trainers (5-10% on client payments)</div>
+                <div>• Usage-based billing for AI features</div>
+                <div>• Automatic tier recommendations based on usage</div>
+            </div>
+            
+            <div class="automation-feature">
+                <div class="feature-title">Access Control</div>
+                <div>• Feature gates based on tier</div>
+                <div>• Client inherits features from their trainer's plan</div>
+                <div>• API rate limiting per tier</div>
+                <div>• Storage quotas enforcement</div>
+            </div>
+            
+            <div class="automation-feature">
+                <div class="feature-title">Client Management</div>
+                <div>• Automatic client assignment to trainers</div>
+                <div>• Bulk import from other platforms</div>
+                <div>• Automated onboarding sequences</div>
+                <div>• Client portal generation with trainer branding</div>
+            </div>
+            
+            <div class="automation-feature">
+                <div class="feature-title">Growth Triggers</div>
+                <div>• Usage alerts at 80% of limits</div>
+                <div>• Predictive upgrade recommendations</div>
+                <div>• Automated discount offers for annual plans</div>
+                <div>• Churn prevention workflows</div>
+            </div>
+        </div>
+        
+        <!-- Migration Paths -->
+        <div class="flow-section">
+            <h3>📈 Natural Migration Paths</h3>
+            
+            <div class="flow-diagram">
+                <div class="flow-step">
+                    Individual User<br>
+                    <small>Gets certified</small>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    Trainer Starter<br>
+                    <small>Grows client base</small>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    Trainer Pro<br>
+                    <small>Opens facility</small>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    Gym Owner<br>
+                    <small>Expands locations</small>
+                </div>
+            </div>
+            
+            <div class="example-box">
+                <div class="example-title">Revenue Per User Journey</div>
+                <div>
+                    • Individual: $14.99/month<br>
+                    • Becomes Trainer: $49.99 + 10 clients × $14.99 = ~$200/month revenue<br>
+                    • Grows to Pro: $99.99 + 50 clients × $14.99 = ~$850/month revenue<br>
+                    • Opens Gym: $599.99 + 500 members × $14.99 = ~$8,100/month revenue
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

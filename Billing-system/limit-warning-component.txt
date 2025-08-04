@@ -1,0 +1,311 @@
+// ClientLimitWarning component - Add to your existing components
+const ClientLimitWarning = ({ billingInfo, onUpgrade }) => {
+    if (!billingInfo || billingInfo.clientLimit === -1) return null;
+    
+    const { clientCount, clientLimit, tierName } = billingInfo;
+    const percentage = Math.round((clientCount / clientLimit) * 100);
+    const remaining = clientLimit - clientCount;
+    
+    // Don't show if under 70%
+    if (percentage < 70) return null;
+    
+    const isAtLimit = clientCount >= clientLimit;
+    const isNearLimit = percentage >= 80 && percentage < 100;
+    
+    return (
+        <div className={`rounded-lg p-4 mb-4 animate-slide-in ${
+            isAtLimit 
+                ? 'bg-red-500/10 border border-red-500/30' 
+                : 'bg-amber-500/10 border border-amber-500/30'
+        }`}>
+            <div className="flex items-center gap-3">
+                <span className="text-2xl">
+                    {isAtLimit ? '🚫' : '⚠️'}
+                </span>
+                <div className="flex-1">
+                    <p className={`font-semibold ${isAtLimit ? 'text-red-400' : 'text-amber-400'}`}>
+                        {isAtLimit 
+                            ? 'Client limit reached!' 
+                            : `You're at ${percentage}% of your client limit`}
+                    </p>
+                    <p className="text-sm text-gray-300 mt-1">
+                        {isAtLimit 
+                            ? `Upgrade from ${tierName} to continue adding clients`
+                            : `Only ${remaining} client slots remaining on ${tierName} plan`}
+                    </p>
+                </div>
+                <button
+                    onClick={onUpgrade}
+                    className={isAtLimit ? 'clockwork-button' : 'clockwork-button-secondary'}
+                >
+                    Upgrade Now
+                </button>
+            </div>
+        </div>
+    );
+};
+
+// AddClientRestriction component - Shows when trying to add client at limit
+const AddClientRestriction = ({ billingInfo, onUpgrade, onArchive }) => {
+    const { clientCount, clientLimit, tierName } = billingInfo;
+    
+    return (
+        <div className="clockwork-card p-6 text-center max-w-md mx-auto">
+            <div className="text-4xl mb-4">🚫</div>
+            <h3 className="text-xl font-semibold text-white mb-2">
+                Client Limit Reached
+            </h3>
+            <p className="text-gray-400 mb-6">
+                You've reached the maximum of {clientLimit} clients allowed on the {tierName} plan.
+                To add more clients, you'll need to upgrade your plan or archive inactive clients.
+            </p>
+            
+            <div className="space-y-3">
+                <button onClick={onUpgrade} className="clockwork-button w-full">
+                    <span className="mr-2">⬆️</span>
+                    Upgrade Plan
+                </button>
+                
+                <button onClick={onArchive} className="clockwork-button-secondary w-full">
+                    <span className="mr-2">📁</span>
+                    Archive Inactive Clients
+                </button>
+            </div>
+            
+            <p className="text-xs text-gray-500 mt-4">
+                Archived clients can be reactivated anytime
+            </p>
+        </div>
+    );
+};
+
+// BillingHeader - Add to navigation or header
+const BillingHeader = ({ billingInfo }) => {
+    const { clientCount, clientLimit, tierName, isRestricted } = billingInfo || {};
+    
+    if (!billingInfo) return null;
+    
+    const percentage = clientLimit === -1 ? 0 : Math.round((clientCount / clientLimit) * 100);
+    const isNearLimit = percentage >= 80;
+    
+    return (
+        <div className="flex items-center gap-4">
+            <div className="text-sm">
+                <span className="text-gray-400">Plan: </span>
+                <span className="font-medium text-white">{tierName}</span>
+            </div>
+            
+            <div className="flex items-center gap-2">
+                <span className="text-sm text-gray-400">Clients:</span>
+                <span className={`font-medium ${
+                    isNearLimit ? 'text-amber-400' : 'text-white'
+                }`}>
+                    {clientCount}/{clientLimit === -1 ? '∞' : clientLimit}
+                </span>
+                
+                {clientLimit !== -1 && (
+                    <div className="w-20 h-2 bg-gray-700 rounded-full overflow-hidden">
+                        <div 
+                            className={`h-full transition-all ${
+                                percentage >= 100 ? 'bg-red-500' :
+                                percentage >= 80 ? 'bg-amber-500' : 'bg-blue-500'
+                            }`}
+                            style={{ width: `${Math.min(100, percentage)}%` }}
+                        />
+                    </div>
+                )}
+            </div>
+            
+            {isRestricted && (
+                <span className="text-xs bg-red-500/20 text-red-400 px-2 py-1 rounded">
+                    Restricted
+                </span>
+            )}
+        </div>
+    );
+};
+
+// ArchiveClientsModal - For archiving inactive clients
+const ArchiveClientsModal = ({ clients, onArchive, onClose }) => {
+    const [selectedClients, setSelectedClients] = useState([]);
+    const [archiving, setArchiving] = useState(false);
+    
+    // Filter inactive clients (no activity in 90+ days)
+    const inactiveClients = clients.filter(client => {
+        const lastActivity = client.last_activity ? new Date(client.last_activity) : null;
+        const daysSinceActivity = lastActivity 
+            ? Math.floor((Date.now() - lastActivity) / (1000 * 60 * 60 * 24))
+            : 999;
+        return daysSinceActivity > 90;
+    });
+    
+    const handleArchive = async () => {
+        if (selectedClients.length === 0) return;
+        
+        setArchiving(true);
+        try {
+            await onArchive(selectedClients);
+            onClose();
+        } catch (error) {
+            console.error('Error archiving clients:', error);
+        } finally {
+            setArchiving(false);
+        }
+    };
+    
+    const toggleClient = (clientId) => {
+        setSelectedClients(prev => 
+            prev.includes(clientId)
+                ? prev.filter(id => id !== clientId)
+                : [...prev, clientId]
+        );
+    };
+    
+    const selectAll = () => {
+        setSelectedClients(inactiveClients.map(c => c.id));
+    };
+    
+    return (
+        <div className="modal-overlay" onClick={onClose}>
+            <div className="modal-content max-w-2xl" onClick={(e) => e.stopPropagation()}>
+                <h3 className="text-xl font-semibold mb-4 text-white">
+                    Archive Inactive Clients
+                </h3>
+                
+                <p className="text-gray-400 mb-6">
+                    Select clients to archive. Archived clients won't count toward your limit 
+                    but can be reactivated anytime. Their data is never deleted.
+                </p>
+                
+                {inactiveClients.length === 0 ? (
+                    <div className="text-center py-8">
+                        <p className="text-gray-400">No inactive clients found.</p>
+                        <p className="text-sm text-gray-500 mt-2">
+                            Clients with no activity for 90+ days will appear here.
+                        </p>
+                    </div>
+                ) : (
+                    <>
+                        <div className="mb-4 flex justify-between items-center">
+                            <span className="text-sm text-gray-400">
+                                {inactiveClients.length} inactive clients found
+                            </span>
+                            <button 
+                                onClick={selectAll}
+                                className="text-sm text-blue-400 hover:text-blue-300"
+                            >
+                                Select All
+                            </button>
+                        </div>
+                        
+                        <div className="max-h-96 overflow-y-auto space-y-2 mb-6">
+                            {inactiveClients.map(client => {
+                                const lastActivity = client.last_activity 
+                                    ? new Date(client.last_activity).toLocaleDateString()
+                                    : 'Never';
+                                const isSelected = selectedClients.includes(client.id);
+                                
+                                return (
+                                    <div 
+                                        key={client.id}
+                                        onClick={() => toggleClient(client.id)}
+                                        className={`p-3 rounded-lg border cursor-pointer transition-all ${
+                                            isSelected 
+                                                ? 'border-blue-500 bg-blue-500/10' 
+                                                : 'border-gray-700 hover:border-gray-600'
+                                        }`}
+                                    >
+                                        <div className="flex items-center justify-between">
+                                            <div className="flex items-center gap-3">
+                                                <input
+                                                    type="checkbox"
+                                                    checked={isSelected}
+                                                    onChange={() => {}}
+                                                    className="w-4 h-4"
+                                                />
+                                                <div>
+                                                    <p className="font-medium text-white">
+                                                        {client.name}
+                                                    </p>
+                                                    <p className="text-sm text-gray-400">
+                                                        Last active: {lastActivity}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <span className="text-xs text-gray-500">
+                                                {client.workouts_completed || 0} workouts
+                                            </span>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                        
+                        <div className="flex gap-2">
+                            <button
+                                onClick={handleArchive}
+                                disabled={selectedClients.length === 0 || archiving}
+                                className="clockwork-button flex-1"
+                            >
+                                {archiving ? (
+                                    <>
+                                        <div className="loading-spinner mr-2"></div>
+                                        Archiving...
+                                    </>
+                                ) : (
+                                    <>Archive {selectedClients.length} Clients</>
+                                )}
+                            </button>
+                            <button onClick={onClose} className="clockwork-button-secondary">
+                                Cancel
+                            </button>
+                        </div>
+                    </>
+                )}
+            </div>
+        </div>
+    );
+};
+
+// Integration helper - Add to your main app
+const useBillingRestrictions = () => {
+    const [billingInfo, setBillingInfo] = useState(null);
+    
+    // Fetch billing info from headers
+    useEffect(() => {
+        const fetchBillingInfo = async () => {
+            try {
+                const response = await fetch('/api/any-endpoint', {
+                    headers: {
+                        'Authorization': `Bearer ${sessionStorage.getItem('authToken')}`
+                    }
+                });
+                
+                // Extract billing info from response headers
+                if (response.headers.get('X-Billing-Tier')) {
+                    setBillingInfo({
+                        tierName: response.headers.get('X-Billing-Tier'),
+                        clientCount: parseInt(response.headers.get('X-Client-Count')),
+                        clientLimit: response.headers.get('X-Client-Limit') === 'unlimited' 
+                            ? -1 
+                            : parseInt(response.headers.get('X-Client-Limit')),
+                        isRestricted: response.headers.get('X-Account-Restricted') === 'true'
+                    });
+                }
+            } catch (error) {
+                console.error('Error fetching billing info:', error);
+            }
+        };
+        
+        fetchBillingInfo();
+    }, []);
+    
+    const checkRestriction = useCallback(async (action) => {
+        if (!billingInfo?.isRestricted) return true;
+        
+        // Show restriction modal
+        return false;
+    }, [billingInfo]);
+    
+    return { billingInfo, checkRestriction };
+};

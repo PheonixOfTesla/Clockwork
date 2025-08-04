@@ -1,0 +1,76 @@
+FILE TYPE DISTRIBUTION
+=====================
+
+.js        28706 files [█████████████████████████████]  58%
+.ts         9993 files [██████████                    ]  20%
+.map        3171 files [███                                         ]   6%
+.json       2590 files [██                                            ]   5%
+.md         1227 files [█                                               ]   2%
+.flow        951 files [██                                            ]   1%
+.mjs         595 files [██                                            ]   1%
+.yml         186 files [██                                            ]   0%
+.cjs         125 files [██                                            ]   0%
+.png          97 files [██                                            ]   0%
+.eslintrc     61 files [██                                            ]   0%
+.txt          55 files [██                                            ]   0%
+.mts          54 files [██                                            ]   0%
+.tsx          53 files [██                                            ]   0%
+.sample       42 files [██                                            ]   0%
+.cts          36 files [██                                            ]   0%
+.html         32 files [██                                            ]   0%
+.nycrc        30 files [██                                            ]   0%
+.css          30 files [██                                            ]   0%
+.npmignore    29 files [██                                            ]   0%
+.coffee       20 files [██                                            ]   0%
+.bnf          14 files [██                                            ]   0%
+.sh           11 files [██                                            ]   0%
+.editorconfig    10 files [██                                            ]   0%
+.jshintrc      7 files [██                                            ]   0%
+.gitkeep       7 files [██                                            ]   0%
+.markdown      6 files [██                                            ]   0%
+.xml           5 files [██                                            ]   0%
+.BSD           5 files [██                                            ]   0%
+.pack          4 files [██                                            ]   0%
+.gitattributes     4 files [██                                            ]   0%
+.babelrc       4 files [██                                            ]   0%
+.1             4 files [██                                            ]   0%
+.tsbuildinfo     3 files [██                                            ]   0%
+.snap          3 files [██                                            ]   0%
+.lock          3 files [██                                            ]   0%
+.jsx           3 files [██                                            ]   0%
+.gitignore     3 files [██                                            ]   0%
+.eslintrc 2     3 files [██                                            ]   0%
+.env           3 files [██                                            ]   0%
+.DS_Store      3 files [██                                            ]   0%
+.wasm          2 files [██                                            ]   0%
+.svg           2 files [██                                            ]   0%
+.production     2 files [██                                            ]   0%
+.nycrc 2       2 files [██                                            ]   0%
+.node          2 files [██                                            ]   0%
+.log           2 files [██                                            ]   0%
+.example       2 files [██                                            ]   0%
+.esprima       2 files [██                                            ]   0%
+.conf          2 files [██                                            ]   0%
+.closure-compiler     2 files [██                                            ]   0%
+.backup        2 files [██                                            ]   0%
+.swf           1 files [██                                            ]   0%
+.save          1 files [██                                            ]   0%
+.py            1 files [██                                            ]   0%
+.php           1 files [██                                            ]   0%
+.pegjs         1 files [██                                            ]   0%
+.pdf           1 files [██                                            ]   0%
+.opts          1 files [██                                            ]   0%
+.old           1 files [██                                            ]   0%
+.npmignore 2     1 files [██                                            ]   0%
+.nix           1 files [██                                            ]   0%
+.mdown         1 files [██                                            ]   0%
+.jscsrc        1 files [██                                            ]   0%
+.jison         1 files [██                                            ]   0%
+.iml           1 files [██                                            ]   0%
+.gz            1 files [██                                            ]   0%
+.exe           1 files [██                                            ]   0%
+.eslintcache     1 files [██                                            ]   0%
+.covignore     1 files [██                                            ]   0%
+.bin           1 files [██                                            ]   0%
+.bak           1 files [██                                            ]   0%
+.applescript     1 files [██                                            ]   0%

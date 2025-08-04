@@ -1,0 +1,29 @@
+INTERESTING PATTERNS & FINDINGS
+===============================
+
+🎯 Potential main entry points:
+../clockwork-backend/middleware/index.js
+../clockwork-backend/config/index.js
+../clockwork-backend/node_modules/jws/index.js
+../clockwork-backend/node_modules/triple-beam/config/index.js
+../clockwork-backend/node_modules/triple-beam/index.js
+../clockwork-backend/node_modules/simple-swizzle/node_modules/is-arrayish/index.js
+../clockwork-backend/node_modules/simple-swizzle/index.js
+../clockwork-backend/node_modules/pg-int8/index.js
+../clockwork-backend/node_modules/destroy/index.js
+../clockwork-backend/node_modules/lodash.includes/index.js
+
+📱 Mobile app files:
+
+🖼️ Image assets:
+Total images:       99
+
+📚 Documentation:
+../clockwork-backend/README.md
+../clockwork-backend/clockwork-backend-complete.md
+../README.md
+../COMPLETE_ANALYSIS.md
+
+🔑 Database files:
+
+🌐 API definitions:

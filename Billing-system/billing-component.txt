@@ -1,0 +1,383 @@
+// BillingDashboard component to integrate into your existing ClockWork frontend
+const BillingDashboard = () => {
+    const [billingStatus, setBillingStatus] = useState(null);
+    const [tiers, setTiers] = useState([]);
+    const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+    const [selectedTier, setSelectedTier] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [paymentProcessing, setPaymentProcessing] = useState(false);
+
+    // Fetch billing status and tiers on mount
+    useEffect(() => {
+        fetchBillingData();
+    }, []);
+
+    const fetchBillingData = async () => {
+        try {
+            setLoading(true);
+            
+            // Fetch current billing status
+            const statusResponse = await fetch('/api/billing/status', {
+                headers: {
+                    'Authorization': `Bearer ${sessionStorage.getItem('authToken')}`
+                }
+            });
+            const statusData = await statusResponse.json();
+            setBillingStatus(statusData);
+
+            // Fetch available tiers
+            const tiersResponse = await fetch('/api/billing/tiers');
+            const tiersData = await tiersResponse.json();
+            setTiers(tiersData.tiers);
+        } catch (error) {
+            console.error('Error fetching billing data:', error);
+            setError('Failed to load billing information');
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const handleUpgrade = async (tierId) => {
+        setPaymentProcessing(true);
+        try {
+            // Create setup intent for payment
+            const setupResponse = await fetch('/api/billing/setup-intent', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${sessionStorage.getItem('authToken')}`
+                }
+            });
+            const { clientSecret } = await setupResponse.json();
+
+            // This would integrate with Stripe Elements
+            // For demo purposes, we'll simulate payment success
+            await simulatePayment();
+
+            // Subscribe to selected tier
+            const subscribeResponse = await fetch('/api/billing/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${sessionStorage.getItem('authToken')}`
+                },
+                body: JSON.stringify({
+                    tierId: tierId,
+                    paymentMethodId: 'pm_demo_12345' // This would come from Stripe Elements
+                })
+            });
+
+            if (subscribeResponse.ok) {
+                setSuccessMessage('Subscription upgraded successfully!');
+                setShowUpgradeModal(false);
+                fetchBillingData(); // Refresh billing status
+            }
+        } catch (error) {
+            console.error('Error processing upgrade:', error);
+            setError('Failed to process upgrade. Please try again.');
+        } finally {
+            setPaymentProcessing(false);
+        }
+    };
+
+    const simulatePayment = () => {
+        return new Promise(resolve => setTimeout(resolve, 2000));
+    };
+
+    if (loading) {
+        return (
+            <div className="flex items-center justify-center h-64">
+                <div className="loading-spinner"></div>
+            </div>
+        );
+    }
+
+    const currentTier = billingStatus?.tier;
+    const usage = billingStatus?.usage;
+    const isApproachingLimit = usage?.isNearLimit;
+    const isAtLimit = usage?.isAtLimit;
+
+    return (
+        <div className="space-y-6">
+            {/* Current Plan Overview */}
+            <div className="clockwork-card p-6">
+                <div className="flex justify-between items-start mb-6">
+                    <div>
+                        <h2 className="text-2xl font-bold text-white mb-2">Billing & Subscription</h2>
+                        <p className="text-gray-400">Manage your plan and billing settings</p>
+                    </div>
+                    <div className="text-right">
+                        <p className="text-sm text-gray-400">Current Plan</p>
+                        <p className="text-2xl font-bold text-blue-400">{currentTier?.name}</p>
+                        <p className="text-lg text-white">${currentTier?.price}/month</p>
+                    </div>
+                </div>
+
+                {/* Usage Meter */}
+                <div className="bg-slate-800 rounded-lg p-4 mb-6">
+                    <div className="flex justify-between items-center mb-2">
+                        <span className="text-sm font-medium text-gray-300">Client Usage</span>
+                        <span className="text-sm text-gray-400">
+                            {usage?.activeClients} / {usage?.clientLimit === -1 ? 'Unlimited' : usage?.clientLimit}
+                        </span>
+                    </div>
+                    {usage?.clientLimit !== -1 && (
+                        <>
+                            <div className="progress-bar" style={{ height: '12px' }}>
+                                <div 
+                                    className="progress-fill"
+                                    style={{ 
+                                        width: `${usage?.percentage}%`,
+                                        background: isAtLimit ? '#ef4444' : isApproachingLimit ? '#fbbf24' : '#3b82f6'
+                                    }}
+                                ></div>
+                            </div>
+                            <div className="mt-2 flex justify-between items-center">
+                                <span className="text-xs text-gray-400">{usage?.percentage}% used</span>
+                                {isApproachingLimit && !isAtLimit && (
+                                    <span className="text-xs text-amber-400">Approaching limit</span>
+                                )}
+                                {isAtLimit && (
+                                    <span className="text-xs text-red-400">Limit reached</span>
+                                )}
+                            </div>
+                        </>
+                    )}
+                </div>
+
+                {/* Upgrade Prompt */}
+                {(isApproachingLimit || isAtLimit) && (
+                    <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 mb-6">
+                        <div className="flex items-center gap-3">
+                            <span className="text-2xl">⚠️</span>
+                            <div className="flex-1">
+                                <p className="font-semibold text-amber-400">
+                                    {isAtLimit ? 'Client limit reached!' : 'Approaching client limit'}
+                                </p>
+                                <p className="text-sm text-gray-300 mt-1">
+                                    {isAtLimit 
+                                        ? 'Upgrade now to continue adding new clients'
+                                        : `You're at ${usage?.percentage}% of your client limit`}
+                                </p>
+                            </div>
+                            <button
+                                onClick={() => setShowUpgradeModal(true)}
+                                className="clockwork-button-secondary"
+                            >
+                                Upgrade Now
+                            </button>
+                        </div>
+                    </div>
+                )}
+
+                {/* Current Features */}
+                <div className="mt-6">
+                    <h3 className="text-lg font-semibold text-white mb-3">Your Plan Includes</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {currentTier?.features?.map((feature, index) => (
+                            <div key={index} className="flex items-center gap-2">
+                                <span className="text-green-400">✓</span>
+                                <span className="text-gray-300">{feature}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            {/* Billing Stats */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="stat-card">
+                    <div className="flex items-center justify-between mb-2">
+                        <span className="text-2xl">👥</span>
+                        <span className="text-2xl font-bold text-white">{usage?.activeClients || 0}</span>
+                    </div>
+                    <p className="text-sm text-gray-400">Active Clients</p>
+                    <p className="text-xs text-gray-500">
+                        {usage?.clientLimit === -1 ? 'Unlimited' : `of ${usage?.clientLimit} allowed`}
+                    </p>
+                </div>
+
+                <div className="stat-card">
+                    <div className="flex items-center justify-between mb-2">
+                        <span className="text-2xl">💰</span>
+                        <span className="text-2xl font-bold text-green-400">
+                            ${billingStatus?.revenue?.total?.toFixed(2) || '0.00'}
+                        </span>
+                    </div>
+                    <p className="text-sm text-gray-400">Total Revenue</p>
+                    <p className="text-xs text-gray-500">All time earnings</p>
+                </div>
+
+                <div className="stat-card">
+                    <div className="flex items-center justify-between mb-2">
+                        <span className="text-2xl">📊</span>
+                        <span className="text-2xl font-bold text-blue-400">
+                            {billingStatus?.subscription?.status || 'Active'}
+                        </span>
+                    </div>
+                    <p className="text-sm text-gray-400">Subscription Status</p>
+                    <p className="text-xs text-gray-500">
+                        Since {new Date(billingStatus?.subscription?.startDate).toLocaleDateString()}
+                    </p>
+                </div>
+            </div>
+
+            {/* Available Plans */}
+            <div className="clockwork-card p-6">
+                <h3 className="text-xl font-semibold text-white mb-4">Available Plans</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {tiers.map((tier) => {
+                        const isCurrent = tier.id === currentTier?.id;
+                        const isDowngrade = tier.price < currentTier?.price;
+                        
+                        return (
+                            <div 
+                                key={tier.id}
+                                className={`border rounded-lg p-4 transition-all ${
+                                    isCurrent 
+                                        ? 'border-blue-500 bg-blue-500/10' 
+                                        : 'border-gray-700 hover:border-gray-600'
+                                }`}
+                            >
+                                <div className="mb-4">
+                                    <h4 className="text-lg font-semibold text-white">{tier.name}</h4>
+                                    <p className="text-2xl font-bold text-white mt-2">
+                                        ${tier.price}
+                                        <span className="text-sm text-gray-400 font-normal">/month</span>
+                                    </p>
+                                </div>
+                                
+                                <div className="mb-4">
+                                    <p className="text-sm text-gray-300">
+                                        {tier.client_limit === -1 
+                                            ? 'Unlimited clients' 
+                                            : `Up to ${tier.client_limit} clients`}
+                                    </p>
+                                </div>
+                                
+                                <ul className="space-y-2 mb-4">
+                                    {tier.features?.slice(0, 3).map((feature, index) => (
+                                        <li key={index} className="text-sm text-gray-400 flex items-start gap-2">
+                                            <span className="text-green-400 mt-0.5">•</span>
+                                            {feature}
+                                        </li>
+                                    ))}
+                                </ul>
+                                
+                                {isCurrent ? (
+                                    <button disabled className="w-full py-2 px-4 bg-gray-700 text-gray-400 rounded-lg cursor-not-allowed">
+                                        Current Plan
+                                    </button>
+                                ) : (
+                                    <button
+                                        onClick={() => {
+                                            setSelectedTier(tier);
+                                            setShowUpgradeModal(true);
+                                        }}
+                                        className={`w-full py-2 px-4 rounded-lg font-medium transition-colors ${
+                                            isDowngrade
+                                                ? 'bg-gray-700 hover:bg-gray-600 text-gray-300'
+                                                : 'bg-blue-500 hover:bg-blue-600 text-white'
+                                        }`}
+                                    >
+                                        {isDowngrade ? 'Downgrade' : 'Upgrade'}
+                                    </button>
+                                )}
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+
+            {/* Quick Actions */}
+            <div className="clockwork-card p-6">
+                <h3 className="text-xl font-semibold text-white mb-4">Quick Actions</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <button className="p-4 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors text-left">
+                        <div className="flex items-center gap-3">
+                            <span className="text-2xl">📄</span>
+                            <div>
+                                <p className="font-medium text-white">View Invoices</p>
+                                <p className="text-sm text-gray-400">Download past invoices and receipts</p>
+                            </div>
+                        </div>
+                    </button>
+                    
+                    <button className="p-4 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors text-left">
+                        <div className="flex items-center gap-3">
+                            <span className="text-2xl">💳</span>
+                            <div>
+                                <p className="font-medium text-white">Update Payment Method</p>
+                                <p className="text-sm text-gray-400">Change your credit card on file</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            {/* Upgrade Modal */}
+            {showUpgradeModal && selectedTier && (
+                <div className="modal-overlay" onClick={() => setShowUpgradeModal(false)}>
+                    <div className="modal-content max-w-lg" onClick={(e) => e.stopPropagation()}>
+                        <h3 className="text-xl font-semibold mb-4 text-white">
+                            {selectedTier.price > currentTier?.price ? 'Upgrade' : 'Change'} to {selectedTier.name}
+                        </h3>
+                        
+                        <div className="bg-slate-800 rounded-lg p-4 mb-6">
+                            <div className="flex justify-between items-center mb-2">
+                                <span className="text-gray-400">New monthly price:</span>
+                                <span className="text-2xl font-bold text-white">${selectedTier.price}</span>
+                            </div>
+                            
+                            {selectedTier.price !== currentTier?.price && (
+                                <div className="flex justify-between items-center text-sm">
+                                    <span className="text-gray-400">Current price:</span>
+                                    <span className="line-through text-gray-500">${currentTier?.price}</span>
+                                </div>
+                            )}
+                        </div>
+                        
+                        <div className="mb-6">
+                            <h4 className="font-medium text-white mb-2">What you'll get:</h4>
+                            <ul className="space-y-2">
+                                {selectedTier.features?.map((feature, index) => (
+                                    <li key={index} className="flex items-center gap-2 text-gray-300">
+                                        <span className="text-green-400">✓</span>
+                                        {feature}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        
+                        <div className="flex gap-2">
+                            <button
+                                onClick={() => handleUpgrade(selectedTier.id)}
+                                disabled={paymentProcessing}
+                                className="clockwork-button flex-1"
+                            >
+                                {paymentProcessing ? (
+                                    <>
+                                        <div className="loading-spinner mr-2"></div>
+                                        Processing...
+                                    </>
+                                ) : (
+                                    'Confirm Change'
+                                )}
+                            </button>
+                            <button
+                                onClick={() => setShowUpgradeModal(false)}
+                                className="clockwork-button-secondary"
+                            >
+                                Cancel
+                            </button>
+                        </div>
+                        
+                        <p className="text-xs text-gray-400 mt-4 text-center">
+                            Changes will be prorated. You can cancel anytime.
+                        </p>
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+};

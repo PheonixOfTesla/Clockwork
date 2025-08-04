@@ -1,0 +1,65 @@
+DIRECTORY STRUCTURE
+==================
+- - - - App
+- - - - Auth
+- - - - Auth
+- - - - Billing
+- - - - Chat
+- - - - Dashboard
+- - - - Dashboard
+- - - - EngineerConsole
+- - - - Goals
+- - - - LoginForm
+- - - - Measurements
+- - - - Navigation
+- - - - Nutrition
+- - - - Reports
+- - - - Tests
+- - - - Training
+- - - - Users
+- - - - Workouts
+- - - - billing
+- - - - chat
+- - - - common
+- - - - common
+- - - - css
+- - - - getMyClients
+- - - - goals
+- - - - initDemoData
+- - - - js
+- - - - measurements
+- - - - nutrition
+- - - - reports
+- - - - tests
+- - - - training
+- - - - users
+- - - - workouts
+- - - components
+- - - components-backup
+- - - hooks
+- - - services
+- - - static
+- - - store
+- - - styles
+- - - utils
+- - - workflows
+- - .git
+- - .git
+- - .github
+- - .vercel
+- - .vercel
+- - ai
+- - build
+- - config
+- - middleware
+- - node_modules
+- - node_modules
+- - public
+- - routes
+- - scripts
+- - src
+- .git
+- Clockwork-frontend
+- analysis-reports
+- clockwork-backend
+..

@@ -1,0 +1,948 @@
+CLOCKWORK PROJECT STRUCTURE ANALYSIS
+=====================================
+Generated: Sat Aug  2 11:26:54 EDT 2025
+
+=== PROJECT SUMMARY ===
+Total project size: 657M
+Total files (excluding node_modules):      179
+Total directories:       58
+
+=== MAIN DIRECTORIES ===
+.
+./Billing-system
+./ClockWorkHub
+./Clockwork-frontend
+./Clockwork-frontend/.vercel
+./Clockwork-frontend/build
+./Clockwork-frontend/public
+./Clockwork-frontend/scripts
+./Clockwork-frontend/src
+./analysis-reports
+./clockwork-backend
+./clockwork-backend/.vercel
+./clockwork-backend/ai
+./clockwork-backend/config
+./clockwork-backend/middleware
+./clockwork-backend/routes
+
+=== FILE BREAKDOWN BY TYPE ===
+JavaScript files:
+./Billing-system/billing-middleware.js
+./Billing-system/billing-routes.js
+./Billing-system/billing-service.js
+./Billing-system/database-config.js
+./Billing-system/migration-script.js
+./Billing-system/scheduled-tasks.js
+./Billing-system/server-integration.js
+./Clockwork-frontend/build/static/js/main.69d2ee86.js
+./Clockwork-frontend/hybrid_data_service.js
+./Clockwork-frontend/react_hybrid_integration.js
+./Clockwork-frontend/scripts/extract-components.js
+./Clockwork-frontend/scripts/extractFromHTML.js
+./Clockwork-frontend/src/App.js
+./Clockwork-frontend/src/components-backup/App/App.js
+./Clockwork-frontend/src/components-backup/Auth/Login.js
+./Clockwork-frontend/src/components-backup/Billing/Billing.js
+./Clockwork-frontend/src/components-backup/Chat/Chat.js
+./Clockwork-frontend/src/components-backup/Dashboard/Dashboard.js
+./Clockwork-frontend/src/components-backup/EngineerConsole/EngineerConsole.js
+./Clockwork-frontend/src/components-backup/Goals/Goals.js
+./Clockwork-frontend/src/components-backup/LoginForm/LoginForm.js
+./Clockwork-frontend/src/components-backup/Measurements/Measurements.js
+./Clockwork-frontend/src/components-backup/Navigation/Navigation.js
+./Clockwork-frontend/src/components-backup/Nutrition/Nutrition.js
+./Clockwork-frontend/src/components-backup/Reports/Reports.js
+./Clockwork-frontend/src/components-backup/Tests/Tests.js
+./Clockwork-frontend/src/components-backup/Training/Training.js
+./Clockwork-frontend/src/components-backup/Users/Users.js
+./Clockwork-frontend/src/components-backup/Workouts/Workouts.js
+./Clockwork-frontend/src/components-backup/common/Layout.js
+./Clockwork-frontend/src/components-backup/common/Navigation.js
+./Clockwork-frontend/src/components-backup/common/PrivateRoute.js
+./Clockwork-frontend/src/components-backup/getMyClients/getMyClients.js
+./Clockwork-frontend/src/components-backup/initDemoData/initDemoData.js
+./Clockwork-frontend/src/components/Auth/Login.js
+./Clockwork-frontend/src/components/Dashboard/Dashboard.js
+./Clockwork-frontend/src/components/common/PrivateRoute.js
+./Clockwork-frontend/src/index.js
+./Clockwork-frontend/src/services/api.js
+./Clockwork-frontend/src/services/auth.js
+./Clockwork-frontend/src/services/socket.js
+./Clockwork-frontend/src/store/dataSlice.js
+./Clockwork-frontend/src/store/index.js
+./Clockwork-frontend/src/store/userSlice.js
+./Clockwork-frontend/tailwind.config.js
+./Clockwork-frontend/vite.config.js
+./clockwork-backend/ai/ai-insights-service.js
+./clockwork-backend/ai/ai-integration.js
+./clockwork-backend/api-service.js
+./clockwork-backend/backend_structure_guide.js
+./clockwork-backend/clockwork-auth-controller.js
+./clockwork-backend/clockwork-auth-routes.js
+./clockwork-backend/clockwork-database-config.js
+./clockwork-backend/clockwork-email-service.js
+./clockwork-backend/clockwork-initial-migration.js
+./clockwork-backend/clockwork-rate-limiter.js
+./clockwork-backend/clockwork-server-main.backup.js
+./clockwork-backend/clockwork-server-main.js
+./clockwork-backend/clockwork-sms-service.js
+./clockwork-backend/clockwork-socket-handlers.js
+./clockwork-backend/clockwork-validation-middleware.js
+./clockwork-backend/clockwork-workout-controller.js
+./clockwork-backend/config-generator.js
+./clockwork-backend/config/aws.js
+./clockwork-backend/config/database.js
+./clockwork-backend/config/index.js
+./clockwork-backend/config/redis.js
+./clockwork-backend/config/stripe.js
+./clockwork-backend/ecosystem.config.js
+./clockwork-backend/fix-routes.js
+./clockwork-backend/index.js
+./clockwork-backend/master-setup.js
+./clockwork-backend/middleware-factory.js
+./clockwork-backend/middleware/auth.js
+./clockwork-backend/middleware/errorHandler.js
+./clockwork-backend/middleware/fileUpload.js
+./clockwork-backend/middleware/index.js
+./clockwork-backend/middleware/validation.js
+./clockwork-backend/route-generator.js
+./clockwork-backend/routes/auth.js
+./clockwork-backend/routes/billing.js
+./clockwork-backend/routes/chat.js
+./clockwork-backend/routes/goals.js
+./clockwork-backend/routes/index.js
+./clockwork-backend/routes/measurements.js
+./clockwork-backend/routes/nutrition.js
+./clockwork-backend/routes/reports.js
+./clockwork-backend/routes/training.js
+./clockwork-backend/routes/users.js
+./clockwork-backend/routes/workouts.js
+./clockwork-backend/test-db.js
+./clockwork-backend/workout.js
+
+TypeScript files:
+
+HTML files:
+./ClockWorkHub/landing-page.html
+./Clockwork-frontend/build/index.html
+./Clockwork-frontend/index copy.html
+./Clockwork-frontend/index.html
+./Clockwork-frontend/public/app-backup.html
+./Clockwork-frontend/public/index.html
+./index copy 2.html
+
+CSS files:
+./Clockwork-frontend/build/static/css/main.a438219d.css
+./Clockwork-frontend/src/index.css
+./Clockwork-frontend/src/styles/globals.css
+./Clockwork-frontend/src/styles/index.css
+
+Configuration files:
+./Clockwork-frontend/.env
+./Clockwork-frontend/.env.example
+./Clockwork-frontend/.env.production
+./Clockwork-frontend/package.json
+./Clockwork-frontend/tailwind.config.js
+./Clockwork-frontend/vite.config.js
+./clockwork-backend/.env
+./clockwork-backend/.env.backup
+./clockwork-backend/.env.example
+./clockwork-backend/.env.save
+./clockwork-backend/ecosystem.config.js
+./clockwork-backend/package.json
+
+Database files:
+./Billing-system/billing-schema.sql
+./Billing-system/migration-script.js
+./clockwork-backend/clockwork-initial-migration.js
+
+Documentation files:
+./Billing-system/billing-component.txt
+./Billing-system/billing-readme.md
+./Billing-system/limit-warning-component.txt
+./Billing-system/stripe-payment-form.txt
+./Clockwork-frontend/.vercel/README.txt
+./Clockwork-frontend/build/static/js/main.69d2ee86.js.LICENSE.txt
+./analysis-reports/analysis-20250801-125115.txt
+./analysis-reports/distribution.txt
+./analysis-reports/patterns.txt
+./analysis-reports/tree-structure.txt
+./clockwork-backend/.gitignore.txt
+./clockwork-backend/.vercel/README.txt
+./clockwork-backend/Nginx .txt
+./clockwork-backend/README.md
+./clockwork-backend/billing-controller.txt
+./clockwork-backend/clockwork-backend-complete.md
+./clockwork-backend/clockwork-backend-overview.txt
+./clockwork-backend/clockwork-backend-summary.txt
+./clockwork-backend/goal-routes.txt
+./clockwork-backend/nutrition-controller.txt
+./clockwork-backend/nutrition-routes.txt
+./clockwork-backend/report-controller.txt
+./clockwork-backend/training-controller.txt
+./clockwork-backend/user-controller.txt
+./clockwork-backend/user-routes.txt
+./folder_analysis.txt
+./project-summary.md
+./project_analysis.txt
+
+=== CLOCKWORK-FRONTEND STRUCTURE ===
+Frontend directory exists
+./Clockwork-frontend/.DS_Store
+./Clockwork-frontend/.env
+./Clockwork-frontend/.env.example
+./Clockwork-frontend/.env.production
+./Clockwork-frontend/.git/config
+./Clockwork-frontend/.git/objects/03/c73a5797df54da637f07f9a5e2adfea84d1f2e
+./Clockwork-frontend/.git/objects/04/2f82ef3c4224eda583b0cb5ff9ba2beda5fd3c
+./Clockwork-frontend/.git/objects/35/be775abd648ef5ad85e24ce5d998839b33bd14
+./Clockwork-frontend/.git/objects/3b/590c20ce65a959c26583c73e7c9b1755575d1a
+./Clockwork-frontend/.git/objects/3b/8f40431c484a576ff2b7ed71ef39c45fd145f5
+./Clockwork-frontend/.git/objects/3b/be9243355effc65cfedd6e953fe5c32089a28a
+./Clockwork-frontend/.git/objects/3c/b87d154ba6e550546d35fe10f9affbc4773976
+./Clockwork-frontend/.git/objects/3d/90afc7454887d00750f2b1e08541d5e11b465a
+./Clockwork-frontend/.git/objects/51/0d8ec4638c3606b7ea6ce1b5e27d1f2e7eae2e
+./Clockwork-frontend/.git/objects/58/03dd8764177b114836b16217427202aea040fa
+./Clockwork-frontend/.git/objects/5f/c34d1da7c533f471668bad7c5589915fbf1812
+./Clockwork-frontend/.git/objects/60/daeea3d1e16fe856ee3d4ed2ae1b1ef45552ac
+./Clockwork-frontend/.git/objects/61/1e8f6f11dba4a3edb365f259fe9850bff5aa66
+./Clockwork-frontend/.git/objects/66/db51dc7cd04d8fa0a4f446029576b789eb9752
+./Clockwork-frontend/.git/objects/92/e2b92789bdc71a517e7f49e401fd0bc82280d3
+./Clockwork-frontend/.git/objects/93/d1b23e5ff72a70f7f65e0302b2992ac82e0c45
+./Clockwork-frontend/.git/objects/94/838dc73f88dfd49a3d56a59eaca6707c184b6f
+./Clockwork-frontend/.git/objects/9c/23dd78a927fb4451e09296adb98c5c97ff2c11
+./Clockwork-frontend/.github/workflows/deploy.yml
+./Clockwork-frontend/.gitignore
+./Clockwork-frontend/.vercel/README.txt
+./Clockwork-frontend/.vercel/project.json
+./Clockwork-frontend/build/.DS_Store
+./Clockwork-frontend/build/asset-manifest.json
+./Clockwork-frontend/build/index.html
+./Clockwork-frontend/build/manifest.json
+./Clockwork-frontend/build/static/.DS_Store
+./Clockwork-frontend/build/static/css/main.a438219d.css
+./Clockwork-frontend/build/static/css/main.a438219d.css.map
+./Clockwork-frontend/build/static/js/main.69d2ee86.js
+./Clockwork-frontend/build/static/js/main.69d2ee86.js.LICENSE.txt
+./Clockwork-frontend/build/static/js/main.69d2ee86.js.map
+./Clockwork-frontend/hybrid_data_service.js
+./Clockwork-frontend/index.html
+./Clockwork-frontend/package-lock.json
+./Clockwork-frontend/package.json
+./Clockwork-frontend/public/app-backup.html
+./Clockwork-frontend/public/index.html
+./Clockwork-frontend/public/manifest.json
+./Clockwork-frontend/react_hybrid_integration.js
+./Clockwork-frontend/scripts/extract-components.js
+./Clockwork-frontend/scripts/extractFromHTML.js
+./Clockwork-frontend/tailwind.config.js
+./Clockwork-frontend/vercel.json
+./Clockwork-frontend/vite.config.js
+
+=== CLOCKWORK-BACKEND STRUCTURE ===
+Backend directory exists
+./clockwork-backend/.DS_Store
+./clockwork-backend/.env
+./clockwork-backend/.env.backup
+./clockwork-backend/.env.example
+./clockwork-backend/.env.save
+./clockwork-backend/.git/COMMIT_EDITMSG
+./clockwork-backend/.git/FETCH_HEAD
+./clockwork-backend/.git/HEAD
+./clockwork-backend/.git/config
+./clockwork-backend/.git/description
+./clockwork-backend/.git/hooks/applypatch-msg.sample
+./clockwork-backend/.git/hooks/commit-msg.sample
+./clockwork-backend/.git/hooks/fsmonitor-watchman.sample
+./clockwork-backend/.git/hooks/post-update.sample
+./clockwork-backend/.git/hooks/pre-applypatch.sample
+./clockwork-backend/.git/hooks/pre-commit.sample
+./clockwork-backend/.git/hooks/pre-merge-commit.sample
+./clockwork-backend/.git/hooks/pre-push.sample
+./clockwork-backend/.git/hooks/pre-rebase.sample
+./clockwork-backend/.git/hooks/pre-receive.sample
+./clockwork-backend/.git/hooks/prepare-commit-msg.sample
+./clockwork-backend/.git/hooks/push-to-checkout.sample
+./clockwork-backend/.git/hooks/sendemail-validate.sample
+./clockwork-backend/.git/hooks/update.sample
+./clockwork-backend/.git/index
+./clockwork-backend/.git/info/exclude
+./clockwork-backend/.git/logs/HEAD
+./clockwork-backend/.git/logs/refs/heads/main
+./clockwork-backend/.git/logs/refs/remotes/origin/main
+./clockwork-backend/.git/objects/01/dc0fe0cf29b8600af85774dd763508deae5f5c
+./clockwork-backend/.git/objects/02/7225e979a0660b5d6229170518e78a91f04a73
+./clockwork-backend/.git/objects/04/240a663a3ac43f8d71d3d13a7f326e24d66166
+./clockwork-backend/.git/objects/06/f601f1c50b09dd6a72f4cdc2bd606722868016
+./clockwork-backend/.git/objects/13/5956f4698b3b4ea47dbfd22d4b2c5beff1d6d4
+./clockwork-backend/.git/objects/13/8ec76e35ab51f7358e61071444737b826f73f9
+./clockwork-backend/.git/objects/15/ef1be3a5880913251dca0536383150684e8677
+./clockwork-backend/.git/objects/16/e109c51b60cb678e956646395cb0cb4c68c6d2
+./clockwork-backend/.git/objects/1e/27d2a80b1b33e9469c67a2df99019f25c04efc
+./clockwork-backend/.git/objects/1f/e8c2434d57b2bce7dfe401478ea7875356f32e
+./clockwork-backend/.git/objects/25/828454f402b8981c5d2c69b251617603928c05
+./clockwork-backend/.git/objects/25/e7f94782ed85078a65d29935661daed8f46d0e
+./clockwork-backend/.git/objects/26/67b495d9bf9cc0e8822abdb454e414f242f2e6
+./clockwork-backend/.git/objects/26/e5822e9ca2e71c9fbd14b2847cc323a3a4e3b4
+./clockwork-backend/.git/objects/2c/2b4f52a9a280ccdd2c0a11cbe66d9681ec3dd4
+./clockwork-backend/.git/objects/2c/68493a7c5d503abcaa629215d3280c86c35975
+./clockwork-backend/.git/objects/2f/d7714b365ede92f484333cac96f1384a1b5e3b
+./clockwork-backend/.git/objects/35/2938865595d15f1179a3eaa84b29d0c5b24380
+./clockwork-backend/.git/objects/38/04abac2a413c3063b11b821a5164fdeadfa21b
+./clockwork-backend/.git/objects/3b/2c7b45e704f02042f98751b0d8918feda446e7
+./clockwork-backend/.git/objects/3b/8f40431c484a576ff2b7ed71ef39c45fd145f5
+./clockwork-backend/.git/objects/3b/978de096e6a61affaabf46aab4ad86fc4b798e
+./clockwork-backend/.git/objects/3c/b87d154ba6e550546d35fe10f9affbc4773976
+./clockwork-backend/.git/objects/3d/30e61421009051a9c1f5fd52e4cdd9708b11c5
+./clockwork-backend/.git/objects/42/63af2fbc5152b20ccdb0b44bc533d881a0231f
+./clockwork-backend/.git/objects/43/ca815e2dda4e4aff3c0e9a34443dd1913ac315
+./clockwork-backend/.git/objects/48/4f18d23843454a3dc619dbb016a120a5fea827
+./clockwork-backend/.git/objects/49/e695ba61cebea48a7881632b9689d4de7afbac
+./clockwork-backend/.git/objects/4b/542765f8c184b1a10501bb4182d64cbcae0527
+./clockwork-backend/.git/objects/4c/36afe3c9510d1f91d8f8751b646bc1e0af60ea
+./clockwork-backend/.git/objects/4c/bb4cd8da4a81da57e8e9ce76c26e8ff6a97111
+./clockwork-backend/.git/objects/54/4cc08213649b6bf3005c02281da41630eb190b
+./clockwork-backend/.git/objects/5e/191d46103c0f1416f5b60dc30512696a904acf
+./clockwork-backend/.git/objects/63/77df1a9ef136af56e62aa59ae24a493fd55926
+./clockwork-backend/.git/objects/66/db51dc7cd04d8fa0a4f446029576b789eb9752
+./clockwork-backend/.git/objects/70/160ba70aba3778c49346ac54c077a9996fe46e
+./clockwork-backend/.git/objects/77/de46d4c31b87b2cc525bf426779ef0eeb64e02
+./clockwork-backend/.git/objects/7a/730dd62c1154b5f8afeb767b37bf047e90ca1c
+./clockwork-backend/.git/objects/7b/b6abb5519ab7a0ee486b9e3ee03101860806b7
+./clockwork-backend/.git/objects/85/36996afc5d39cbd3b0fe447bbf6fa0b0ab5a75
+./clockwork-backend/.git/objects/85/de131784ca92663bc2aafff970efb8b376dbd4
+./clockwork-backend/.git/objects/87/089c2d088bf939d641f0183d56cba13a76167a
+./clockwork-backend/.git/objects/87/1ed6af3380250bb1ec718edb492251d4556d78
+./clockwork-backend/.git/objects/8a/e0bf22c97dde0c188d5066e854e73d169a1aaf
+./clockwork-backend/.git/objects/8c/9de3a3450ea6affae6906ac739e45cd85deaa9
+./clockwork-backend/.git/objects/8d/93f49586b2eed29bfb7c0e35a42d37a6b0a878
+./clockwork-backend/.git/objects/98/46e674fc12981a949454354e6e8ceee161e388
+./clockwork-backend/.git/objects/99/b5c05d58f84a910e5b97595d19727f2ef23f86
+./clockwork-backend/.git/objects/9b/c4673a54ad5fb3d694cab80187c391b5f8968b
+./clockwork-backend/.git/objects/a7/9ab1d5f96384a311acc75a07e94e02a7a9f23e
+./clockwork-backend/.git/objects/a7/f21f48a2117695911e8dd085aa128e71fb9de6
+./clockwork-backend/.git/objects/b5/d5b0d53c6d738821303ec053f9cb81e9646077
+./clockwork-backend/.git/objects/b6/56efa662cfcadd0c78039a53d4eb25b9630986
+./clockwork-backend/.git/objects/b6/5a65113b6f7f08ad1c7ab313336649e18ebe77
+./clockwork-backend/.git/objects/b6/79cbd30863c54791a84580d0a89104152de688
+./clockwork-backend/.git/objects/bb/e54db0fc1de6acbf05943ceeced3a9954a52f0
+./clockwork-backend/.git/objects/be/ebd2dca8d9103b91feeda1e60c3ed9dd53c65c
+./clockwork-backend/.git/objects/c6/63b56dec115c3924c8ea9454c4427707533567
+./clockwork-backend/.git/objects/c7/ddc617902d622bec7d02d050cc58b571fcb285
+./clockwork-backend/.git/objects/c8/b1f7f0f879d23b5df16641e11048901c6a3ada
+./clockwork-backend/.git/objects/ca/5e2ec91b0788a1395d5c44abbf617dff537d2e
+./clockwork-backend/.git/objects/cc/28b527e1f0c0abbd065f6b3b8779a0160cbd70
+./clockwork-backend/.git/objects/ce/730de822a542e279bdd6059190657d0a4c7d92
+./clockwork-backend/.git/objects/d2/76ec3e5ce0a6b900c499d10f4355ce1493a0bd
+./clockwork-backend/.git/objects/d6/8da1e4a936ed4f6d1f3ee269a7301061751706
+./clockwork-backend/.git/objects/da/29a2f24c7aec9a33db6250366642fd1cfba8b2
+./clockwork-backend/.git/objects/da/69b91a6f34ac23e4b95f7a21589e5efddf252f
+./clockwork-backend/.git/objects/dc/6488b07d3994ec26df2c559a92c6a00193f14c
+./clockwork-backend/.git/objects/df/281760b28168efbdec1da90e0b337423ee6630
+./clockwork-backend/.git/objects/e6/e5179c617cad9a495f17dd6bb8700f48983744
+./clockwork-backend/.git/objects/e9/50891055ee95341334ff9756aaa32f55324453
+./clockwork-backend/.git/objects/e9/85853ed84acf10f62f639a4733083229c5a55d
+./clockwork-backend/.git/objects/ea/37efd279c70e414492ed1fc1edcbd66c703ae5
+./clockwork-backend/.git/objects/ea/fec5263b7c28909d087fda3b6465a3ba53881a
+./clockwork-backend/.git/objects/ee/39a3b7645ab8ad187d1319a52082902c804d46
+./clockwork-backend/.git/objects/f0/4a21332eba2cae5d6897abcf4fc2f58018529b
+./clockwork-backend/.git/objects/f0/9293b342a73bca0e140e57d294e11a0b94eba7
+./clockwork-backend/.git/objects/f2/1ac42f099f704b957da9bb0b6cc3796b69ac62
+./clockwork-backend/.git/objects/f7/5b5843a515e1be03267150bb4b03837d00d0c2
+./clockwork-backend/.git/objects/f9/8df614eaac7352b7eb09678eef32cca818588f
+./clockwork-backend/.git/objects/ff/a48b2ae5ca455ded1fd36ab6fa96a1491ebe5b
+./clockwork-backend/.git/objects/ff/ccf3294cc73543895ec58ef3c81883152d8ac5
+./clockwork-backend/.git/refs/heads/main
+./clockwork-backend/.git/refs/remotes/origin/main
+./clockwork-backend/.gitignore
+./clockwork-backend/.gitignore.txt
+./clockwork-backend/.vercel/README.txt
+./clockwork-backend/.vercel/project.json
+./clockwork-backend/Nginx .txt
+./clockwork-backend/README.md
+./clockwork-backend/ai/ai-insights-service.js
+./clockwork-backend/ai/ai-integration.js
+./clockwork-backend/api-service.js
+./clockwork-backend/backend_structure_guide.js
+./clockwork-backend/backup.sh
+./clockwork-backend/billing-controller.txt
+./clockwork-backend/certbot-setup.sh
+./clockwork-backend/clockwork-auth-controller.js
+./clockwork-backend/clockwork-auth-routes.js
+./clockwork-backend/clockwork-backend-complete.md
+./clockwork-backend/clockwork-backend-overview.txt
+./clockwork-backend/clockwork-backend-summary.txt
+./clockwork-backend/clockwork-database-config.js
+./clockwork-backend/clockwork-email-service.js
+./clockwork-backend/clockwork-initial-migration.js
+./clockwork-backend/clockwork-quickstart.sh
+./clockwork-backend/clockwork-rate-limiter.js
+./clockwork-backend/clockwork-server-main.backup.js
+./clockwork-backend/clockwork-server-main.js
+./clockwork-backend/clockwork-server-main.js.backup
+./clockwork-backend/clockwork-server-main.js.bak
+./clockwork-backend/clockwork-sms-service.js
+./clockwork-backend/clockwork-socket-handlers.js
+./clockwork-backend/clockwork-validation-middleware.js
+./clockwork-backend/clockwork-workout-controller.js
+./clockwork-backend/config-generator.js
+./clockwork-backend/config/aws.js
+./clockwork-backend/config/database.js
+./clockwork-backend/config/index.js
+./clockwork-backend/config/redis.js
+./clockwork-backend/config/stripe.js
+./clockwork-backend/deploy.sh
+./clockwork-backend/deploy.yml
+./clockwork-backend/docker-compose.production.yml
+./clockwork-backend/dockerfile.production
+./clockwork-backend/ecosystem.config.js
+./clockwork-backend/fix-routes.js
+./clockwork-backend/goal-routes.txt
+./clockwork-backend/index.js
+./clockwork-backend/master-setup.js
+./clockwork-backend/middleware-factory.js
+./clockwork-backend/middleware/auth.js
+./clockwork-backend/middleware/errorHandler.js
+./clockwork-backend/middleware/fileUpload.js
+./clockwork-backend/middleware/index.js
+./clockwork-backend/middleware/validation.js
+./clockwork-backend/monitoring-stack.yml
+./clockwork-backend/nutrition-controller.txt
+./clockwork-backend/nutrition-routes.txt
+./clockwork-backend/package-lock.json
+./clockwork-backend/package.json
+./clockwork-backend/postgres-tuning.conf
+./clockwork-backend/redis-config.conf
+./clockwork-backend/report-controller.txt
+./clockwork-backend/rollback.sh
+./clockwork-backend/route-generator.js
+./clockwork-backend/routes/auth.js
+./clockwork-backend/routes/billing.js
+./clockwork-backend/routes/chat.js
+./clockwork-backend/routes/goals.js
+./clockwork-backend/routes/index.js
+./clockwork-backend/routes/measurements.js
+./clockwork-backend/routes/nutrition.js
+./clockwork-backend/routes/reports.js
+./clockwork-backend/routes/training.js
+./clockwork-backend/routes/users.js
+./clockwork-backend/routes/workouts.js
+./clockwork-backend/setup-backend.sh
+./clockwork-backend/test-db.js
+./clockwork-backend/training-controller.txt
+./clockwork-backend/user-controller.txt
+./clockwork-backend/user-routes.txt
+./clockwork-backend/vercel.json
+./clockwork-backend/workout.js
+
+=== BILLING-SYSTEM STRUCTURE ===
+Billing-system directory exists
+./Billing-system/billing-component.txt
+./Billing-system/billing-middleware.js
+./Billing-system/billing-readme.md
+./Billing-system/billing-routes.js
+./Billing-system/billing-schema.sql
+./Billing-system/billing-service.js
+./Billing-system/database-config.js
+./Billing-system/env-template.sh
+./Billing-system/limit-warning-component.txt
+./Billing-system/migration-script.js
+./Billing-system/package-updates.json
+./Billing-system/scheduled-tasks.js
+./Billing-system/server-integration.js
+./Billing-system/stripe-payment-form.txt
+
+=== ROOT LEVEL FILES ===
+./.DS_Store
+./folder_analysis.txt
+./index copy 2.html
+./project-summary.md
+./project_analysis.txt
+
+=== PACKAGE.JSON ANALYSIS ===
+File: ./clockwork-backend/package.json
+Name:   "name": "clockwork-backend",
+Version:   "version": "1.0.0",
+Scripts:   "scripts": {
+    "start": "node clockwork-server-main.js",
+    "dev": "nodemon clockwork-server-main.js",
+    "vercel-build": "echo 'No build required'"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+---
+File: ./Clockwork-frontend/package.json
+Name:   "name": "clockwork-frontend",
+Version:   "version": "1.0.0",
+Scripts:   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "react-redux": "^9.0.4",
+---
+
+=== EXISTING API ROUTES (if any) ===
+./clockwork-backend/routes/auth.js
+./clockwork-backend/routes/billing.js
+./clockwork-backend/routes/chat.js
+./clockwork-backend/routes/goals.js
+./clockwork-backend/routes/index.js
+./clockwork-backend/routes/measurements.js
+./clockwork-backend/routes/nutrition.js
+./clockwork-backend/routes/reports.js
+./clockwork-backend/routes/training.js
+./clockwork-backend/routes/users.js
+./clockwork-backend/routes/workouts.js
+
+=== EXISTING MODELS/SCHEMAS ===
+
+=== EXISTING MIDDLEWARE ===
+./Billing-system/billing-middleware.js
+./clockwork-backend/clockwork-validation-middleware.js
+./clockwork-backend/middleware/auth.js
+./clockwork-backend/middleware/errorHandler.js
+./clockwork-backend/middleware/fileUpload.js
+./clockwork-backend/middleware/index.js
+./clockwork-backend/middleware/validation.js
+
+=== ENVIRONMENT FILES ===
+./Clockwork-frontend/.env
+./Clockwork-frontend/.env.example
+./Clockwork-frontend/.env.production
+./clockwork-backend/.env
+./clockwork-backend/.env.backup
+./clockwork-backend/.env.example
+./clockwork-backend/.env.save
+
+=== BUILD/CONFIG FILES ===
+./Clockwork-frontend/tailwind.config.js
+./Clockwork-frontend/vite.config.js
+
+=== DEPLOYMENT FILES ===
+./Clockwork-frontend/vercel.json
+./clockwork-backend/docker-compose.production.yml
+./clockwork-backend/vercel.json
+
+=== KEY FILE CONTENTS ===
+Backend server file:
+File: ./clockwork-backend/middleware/index.js
+Content preview:
+// middleware/index.js - Central middleware exports
+module.exports = {
+  ...require('./auth'),
+  errorHandler: require('./errorHandler'),
+  fileUpload: require('./fileUpload'),
+  validation: require('./validation')
+};---
+File: ./clockwork-backend/config/index.js
+Content preview:
+// config/index.js - Central configuration exports
+module.exports = {
+  database: require('./database'),
+  redis: require('./redis'),
+  stripe: require('./stripe'),
+  aws: require('./aws')
+};---
+File: ./clockwork-backend/index.js
+Content preview:
+// Vercel entry point
+const app = require('./clockwork-server-main.js');
+
+// Export the Express app for Vercel
+module.exports = app;
+---
+
+Package.json dependencies:
+File: ./clockwork-backend/package.json
+Dependencies:
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.7",
+    "pg": "^8.11.3",
+    "redis": "^4.6.10",
+    "socket.io": "^4.6.2",
+    "twilio": "^4.19.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+DevDependencies:
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+---
+File: ./Clockwork-frontend/package.json
+Dependencies:
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "react-redux": "^9.0.4",
+    "@reduxjs/toolkit": "^2.0.1",
+    "axios": "^1.6.2",
+    "react-hot-toast": "^2.4.1",
+    "socket.io-client": "^4.6.2",
+    "@stripe/stripe-js": "^2.2.0",
+    "@stripe/react-stripe-js": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.0",
+    "vite": "^5.0.8"
+  }
+DevDependencies:
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.0",
+    "vite": "^5.0.8"
+  }
+}
+---
+
+Existing API routes content:
+File: ./clockwork-backend/routes/goals.js
+Content preview:
+const router = require('express').Router();
+const { authenticate, authorize } = require('../middleware/auth');
+const { validateRequest } = require('../middleware/validation');
+
+// Temporary goals routes until controllers are connected
+
+// Get all goals
+router.get('/', authenticate, async (req, res) => {
+  res.json({
+    message: 'goals list endpoint',
+    data: [],
+    status: 'pending_controller_integration'
+  });
+});
+
+// Get single goals
+router.get('/:id', authenticate, async (req, res) => {
+  res.json({
+    message: 'goals detail endpoint',
+    id: req.params.id,
+    status: 'pending_controller_integration'
+  });
+});
+
+// Create goals
+router.post('/', authenticate, async (req, res) => {
+  res.json({
+    message: 'goals create endpoint',
+    data: req.body,
+    status: 'pending_controller_integration'
+---
+File: ./clockwork-backend/routes/auth.js
+Content preview:
+const router = require('express').Router();
+const authController = require('../clockwork-auth-controller');
+const { authenticate } = require('../middleware/auth');
+const { validateRequest, validationSchemas } = require('../middleware/validation');
+
+// Import rate limiter with fallback
+let rateLimiter;
+try {
+  rateLimiter = require('../clockwork-rate-limiter');
+} catch (e) {
+  // Fallback if rate limiter doesn't exist
+  rateLimiter = {
+    auth: (req, res, next) => next(),
+    strict: (req, res, next) => next(),
+    default: (req, res, next) => next()
+  };
+}
+
+// Auth routes
+router.post('/signup', rateLimiter.auth, validateRequest(validationSchemas.signup), (req, res) => {
+  res.json({ message: 'Signup endpoint - controller integration pending' });
+});
+
+router.post('/login', rateLimiter.auth, validateRequest(validationSchemas.login), (req, res) => {
+  res.json({ message: 'Login endpoint - controller integration pending' });
+});
+
+router.post('/logout', authenticate, (req, res) => {
+  res.json({ message: 'Logout successful' });
+});
+---
+File: ./clockwork-backend/routes/users.js
+Content preview:
+const router = require('express').Router();
+const { authenticate, authorize } = require('../middleware/auth');
+const { validateRequest } = require('../middleware/validation');
+
+// Temporary users routes until controllers are connected
+
+// Get all users
+router.get('/', authenticate, async (req, res) => {
+  res.json({
+    message: 'users list endpoint',
+    data: [],
+    status: 'pending_controller_integration'
+  });
+});
+
+// Get single users
+router.get('/:id', authenticate, async (req, res) => {
+  res.json({
+    message: 'users detail endpoint',
+    id: req.params.id,
+    status: 'pending_controller_integration'
+  });
+});
+
+// Create users
+router.post('/', authenticate, async (req, res) => {
+  res.json({
+    message: 'users create endpoint',
+    data: req.body,
+    status: 'pending_controller_integration'
+---
+File: ./clockwork-backend/routes/index.js
+Content preview:
+// routes/index.js - Central route exports
+module.exports = {
+  authRoutes: require('./auth'),
+  userRoutes: require('./users'),
+  workoutRoutes: require('./workouts'),
+  nutritionRoutes: require('./nutrition'),
+  billingRoutes: require('./billing'),
+  measurementRoutes: require('./measurements'),
+  goalRoutes: require('./goals'),
+  trainingRoutes: require('./training'),
+  reportRoutes: require('./reports'),
+  chatRoutes: require('./chat')
+};---
+File: ./clockwork-backend/routes/billing.js
+Content preview:
+const router = require('express').Router();
+const { authenticate, authorize } = require('../middleware/auth');
+const { validateRequest } = require('../middleware/validation');
+
+// Temporary billing routes until controllers are connected
+
+// Get all billing
+router.get('/', authenticate, async (req, res) => {
+  res.json({
+    message: 'billing list endpoint',
+    data: [],
+    status: 'pending_controller_integration'
+  });
+});
+
+// Get single billing
+router.get('/:id', authenticate, async (req, res) => {
+  res.json({
+    message: 'billing detail endpoint',
+    id: req.params.id,
+    status: 'pending_controller_integration'
+  });
+});
+
+// Create billing
+router.post('/', authenticate, async (req, res) => {
+  res.json({
+    message: 'billing create endpoint',
+    data: req.body,
+    status: 'pending_controller_integration'
+---
+
+Database/Model files content:
+
+Environment files content:
+File: ./clockwork-backend/.env.backup
+Content (with sensitive data hidden):
+cat > .env << 'EOF'
+NODE_ENV=***HIDDEN***
+PORT=***HIDDEN***
+
+# Database
+DATABASE_URL=***HIDDEN***
+
+# JWT Secrets
+JWT_SECRET=***HIDDEN***
+JWT_REFRESH_SECRET=***HIDDEN***
+
+# Frontend
+FRONTEND_URL=***HIDDEN***
+ALLOWED_ORIGINS=***HIDDEN***
+
+# Redis (for later when you set it up)
+# REDIS_URL=***HIDDEN***
+
+# Email (SendGrid - for later)
+# SENDGRID_API_KEY=***HIDDEN***
+
+# SMS (Twilio - for later)
+# TWILIO_ACCOUNT_SID=***HIDDEN***
+# TWILIO_AUTH_TOKEN=***HIDDEN***
+# TWILIO_PHONE_NUMBER=***HIDDEN***
+EOF---
+File: ./clockwork-backend/.env.save
+Content (with sensitive data hidden):
+
+
+
+
+
+cat > .env << 'EOF'
+NODE_ENV=***HIDDEN***
+PORT=***HIDDEN***
+
+# Database
+DATABASE_URL=***HIDDEN***
+
+# JWT Secrets
+JWT_SECRET=***HIDDEN***
+JWT_REFRESH_SECRET=***HIDDEN***
+
+# Frontend
+FRONTEND_URL=***HIDDEN***
+ALLOWED_ORIGINS=***HIDDEN***
+
+# Redis (for later when you set it up)
+# REDIS_URL=***HIDDEN***
+
+# Email (SendGrid - for later)
+# SENDGRID_API_KEY=***HIDDEN***
+
+# SMS (Twilio - for later)
+# TWILIO_ACCOUNT_SID=***HIDDEN***
+# TWILIO_AUTH_TOKEN=***HIDDEN***
+# TWILIO_PHONE_NUMBER=***HIDDEN***
+EOF
+---
+File: ./clockwork-backend/.env
+Content (with sensitive data hidden):
+# .env.example - Environment variables template for ClockWork
+# Copy this file to .env and fill in your values
+
+# Application
+NODE_ENV=***HIDDEN***
+PORT=***HIDDEN***
+API_VERSION=***HIDDEN***
+APP_NAME=***HIDDEN***
+APP_URL=***HIDDEN***
+FRONTEND_URL=***HIDDEN***
+
+# Database
+DATABASE_URL=***HIDDEN***
+DB_HOST=***HIDDEN***
+DB_PORT=***HIDDEN***
+DB_NAME=***HIDDEN***
+DB_USER=***HIDDEN***
+DB_PASSWORD=***HIDDEN***
+DB_POOL_MIN=***HIDDEN***
+DB_POOL_MAX=***HIDDEN***
+RUN_MIGRATIONS=***HIDDEN***
+LOG_QUERIES=***HIDDEN***
+
+# Redis
+REDIS_URL=***HIDDEN***
+REDIS_PASSWORD=***HIDDEN***
+REDIS_DB=***HIDDEN***
+REDIS_PREFIX=***HIDDEN***
+
+# JWT
+JWT_SECRET=***HIDDEN***
+JWT_REFRESH_SECRET=***HIDDEN***
+JWT_EXPIRE=***HIDDEN***
+JWT_REFRESH_EXPIRE=***HIDDEN***
+
+# Stripe
+STRIPE_SECRET_KEY=***HIDDEN***
+STRIPE_WEBHOOK_SECRET=***HIDDEN***
+STRIPE_BASIC_PRICE_ID=***HIDDEN***
+STRIPE_PRO_PRICE_ID=***HIDDEN***
+STRIPE_ENTERPRISE_PRICE_ID=***HIDDEN***
+
+# AWS
+AWS_REGION=***HIDDEN***
+AWS_ACCESS_KEY_ID=***HIDDEN***
+AWS_SECRET_ACCESS_KEY=***HIDDEN***
+AWS_S3_BUCKET=***HIDDEN***
+
+# SendGrid
+SENDGRID_API_KEY=***HIDDEN***
+SENDGRID_FROM_EMAIL=***HIDDEN***
+SENDGRID_FROM_NAME=***HIDDEN***
+
+# Twilio
+TWILIO_ACCOUNT_SID=***HIDDEN***
+TWILIO_AUTH_TOKEN=***HIDDEN***
+TWILIO_PHONE_NUMBER=***HIDDEN***
+
+# Monitoring
+SENTRY_DSN=***HIDDEN***
+LOG_LEVEL=***HIDDEN***
+
+# Rate Limiting
+RATE_LIMIT_WINDOW_MS=***HIDDEN***
+RATE_LIMIT_MAX_REQUESTS=***HIDDEN***
+WHITELISTED_IPS=***HIDDEN***
+
+# Security
+ALLOWED_ORIGINS=***HIDDEN***
+SESSION_SECRET=***HIDDEN***
+BCRYPT_ROUNDS=***HIDDEN***
+
+# Features
+ENABLE_SIGNUP=***HIDDEN***
+ENABLE_2FA=***HIDDEN***
+ENABLE_SOCIAL_LOGIN=***HIDDEN***
+MAINTENANCE_MODE=***HIDDEN***
+
+# External APIs
+OPENAI_API_KEY=***HIDDEN***
+GOOGLE_MAPS_API_KEY=***HIDDEN***
+
+# Email Settings
+EMAIL_PROVIDER=***HIDDEN***
+EMAIL_RATE_LIMIT_PER_HOUR=***HIDDEN***
+EMAIL_RATE_LIMIT_PER_DAY=***HIDDEN***
+
+# SMS Settings
+SMS_PROVIDER=***HIDDEN***
+SMS_RATE_LIMIT_PER_HOUR=***HIDDEN***
+SMS_RATE_LIMIT_PER_DAY=***HIDDEN***---
+
+Main index.html structure:
+
+=== INTEGRATION READINESS CHECKLIST ===
+✓ Check for existing authentication system
+✓ Check for database connection setup
+✓ Check for API endpoint structure
+✓ Check for environment configuration
+✓ Check for deployment configuration
+
+=== ANALYSIS COMPLETE ===
+Review project_analysis.txt for complete project overview
+This file contains both structure AND content for integration planning
